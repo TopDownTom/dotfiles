@@ -9,10 +9,17 @@ cmus/.config/cmus/*
 !cmus/.config/cmus/autosave
 
 # Firefox
-homeDirFiles/.mozilla/
-!homeDirFiles/.mozilla/firefox/managed/chrome/userChrome.css
+!homeDirFiles/.mozilla
+homeDirFiles/.mozilla/*
+!homeDirFiles/.mozilla/firefox
+homeDirFiles/.mozilla/firefox/*
+!homeDirFiles/.mozilla/firefox/managed
+homeDirFiles/.mozilla/firefox/managed/*
+!homeDirFiles/.mozilla/firefox/managed/chrome
+homeDirFiles/.mozilla/firefox/managed/chrome/*
 !homeDirFiles/.mozilla/firefox/managed/startpage.html
 !homeDirFiles/.mozilla/firefox/managed/background.png
+!homeDirFiles/.mozilla/firefox/managed/chrome/userChrome.css
 
 # newsboat
 newsboat/.local/

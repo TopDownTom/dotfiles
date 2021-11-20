@@ -1,0 +1,173 @@
+<html>
+
+<head>
+<title>Shores of the W.W.W</title>
+</head>
+
+<style>
+html {
+     background-color: #002b36;
+     background: url(background.png) no-repeat center center fixed;
+     background-size: 100% 100%;
+}
+h1 {
+     text-align: center;
+     margin: 150px;
+     color: lightgrey;
+     background-color: transparent;
+     font: serif;
+}
+form {
+     margin: 100px;
+     text-align: center;
+     color: lightgrey;
+
+}
+li {
+     padding: 5px;
+     list-style: none;
+     text-align: center;
+}
+a {
+     text-align: center;
+}
+ul {
+     text-align: center;
+}
+.containerA {
+     width: 100%;
+     margin: auto;
+     position: absolute;
+     top: 25%;
+     text-align:center;
+}
+.containerB {
+     width: 100%;
+     margin: auto;
+     position: absolute;
+     top: 70%;
+     text-align:center;
+}
+div#expand {
+     display: none;
+}
+.block {
+     border-radius: 10px;
+     height: 250px;
+     width: 220px;
+     display: inline-block;
+     margin: 25px;
+     padding: 10px;
+     padding-bottom: 5px;
+     background-color: darkgrey;
+     white-space:nowrap;
+     overflow: auto;
+}
+.blockBoards {
+     text-color: #FF0000;
+     border-radius: 10px;
+     height: 250px;
+     width: 220px;
+     display: inline-block;
+     margin: 25px;
+     padding: 10px;
+     padding-bottom: 5px;
+     background-color: darkgrey;
+     white-space: nowrap;
+     overflow: auto;
+}
+.block:hover {
+     background-color: lightgrey;
+}
+a:hover {
+     color: #6767e4;
+}
+.blockBoards:hover {
+     background-color: lightgrey;
+}
+select {
+     color: black;
+     text-align: center;
+     background-color: lightgrey;
+     border-radius: 1px;
+}
+</style>
+
+<body>
+
+<h1>Welcome To The Internet, Enjoy Your Stay.</h1>
+
+<!--<form action="https://duckduckgo.com" method="post"><b>Looking For Something Specific?       </b>
+     <input type="text" name="q" autofocus>
+</form>-->
+
+<!-- Begin boxes containing frequently used links -->
+<div class="containerA"> <!-- Container A is spaced down 350px from top of page
+     <div class="block">Skeleton
+     </div>
+-->
+     <div class="block"><b><u>Daily Check</u></b><br><br>
+               <li><a href="https://forecast.weather.gov/MapClick.php?w0=t&w3=sfcwind&w3u=1&w4=sky&w5=pop&w6=rh&w7=rain&w9=snow&w10=fzg&w13u=0&w16u=1&w17u=1&w19=cig&w20=vsby&AheadHour=0&Submit=Submit&FcstType=graphical&textField1=42.9064&textField2=-71.1413&site=all&unit=0&dd=&bw=">Weather</a></li>
+               <li><a href="https://mail.protonmail.com">Proton</a></li>
+     </div>
+
+     <div class="block"><b><u>General Browsing</u></b><br><br>
+                <li><a href="https://www.patreon.com/login?ru=%2F"/>Patreon</a></li>
+                <li><a href="https://forum.miata.net/vb/">Miata.net</a></li>
+                <li><a href="https://www.team-integra.net/forums/">Team-Integra.net</a></li>
+                <li><a href="https://d-series.org">d-series.org</a></li>
+                <li><a href="https://github.com/topdowntom">Github</a></li>
+     </div>
+
+     <div class="blockBoards"><b><u>Boards & Blogs</u></b><br><br><br>
+		<select onChange="window.location.href=this.value">
+			<option selected disabled value="Coffee">Coffee</option>
+			<option value="https://coffeeadastra.com/blog/">Coffee Ad Astra</option>
+			<option value="http://awasteof.coffee/">A Waste Of Coffee</option>
+			<option value="http://socraticcoffee.com/">Socratic Coffee</option>
+			<option value="https://theknockbox.net/">The Knockbox</option>
+		</select><br><br>
+
+		<select onChange="window.location.href=this.value">
+			<option selected disabled value="Reddit">Reddit</option>
+			<option value="https://old.reddit.com/r/archlinux/new">Arch</option>
+			<option value="https://old.reddit.com/r/cemeteryporn/new">CemeteryPorn</option>
+			<option value="https://old.reddit.com/r/goth/new">Goth</option>
+			<option value="https://old.reddit.com/r/hardstyle/new">Hardstyle</option>
+			<option value="https://old.reddit.com/r/i3wm/new">i3</option>
+			<option value="https://old.reddit.com/r/linuxmasterrace/new">Linux Master Race</option>
+			<option value="https://old.reddit.com/r/linuxquestions/new">Linux Questions</option>
+			<option value="https://old.reddit.com/r/thinkpad/new">Thinkpad</option>
+			<option value="https://old.reddit.com/r/unixporn/new">UnixPorn</option>
+		</select><br><br>
+
+		<select onChange="window.location.href=this.value">
+			<option selected disabled value="Blogs">Blogs</option>
+			<option value="http://www.obscuraundead.com/">Obscura Undead</option>
+		</select><br><br>
+
+		<select onChange="window.location.href=this.value">
+			<option selected disabled value="4Chan">4Chan</option>
+			<option value="https://4chan.org/wg/catalog">/wg/</option>
+			<option value="https://4chan.org/o/catalog">/o/</option>
+			<option value="https://4chan.org/wsg/catalog">/wsg/</option>
+		</select><br><br>
+     </div>
+</div>
+
+<!--
+<div class="containerB">  Container B retains overall formatting structure as Container A, but begins at 750px from top of page.
+
+     <div class="block">Skeleton
+
+               <li><format action="about:config" method="post">Words</format></li>
+
+     </div>
+
+</div>
+-->
+
+</div>
+</div>
+</body>
+</html>
