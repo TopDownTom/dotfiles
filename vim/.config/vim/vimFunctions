@@ -1,0 +1,18 @@
+" Below are a collection of vim functions I use.
+
+" This adds a colored column where github would begin introducing a horizontal
+" slidebar
+function! ColorColumn()
+	if &colorcolumn
+		:set colorcolumn=0
+	else
+		:set colorcolumn=125
+	endif
+endfunction
+
+" Calls my script (makePDF) to compile and display the current LaTeX file. Subsequent
+" calls will simply update the pdf to the newest version. Depends: zathura.
+function! MakePdf()
+	:silent execute '!makePDF ' . expand("%")
+	:redraw!
+endfunction

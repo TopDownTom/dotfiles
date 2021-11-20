@@ -1,0 +1,2 @@
+RUN+="/usr/bin/chown root:tom /sys/class/backlight/intel_backlight/brightness"
+RUN+="/usr/bin/chmod 664 /sys/class/backlight/intel_backlight/brightness"

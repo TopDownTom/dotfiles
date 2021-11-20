@@ -1,0 +1,17 @@
+! URxvt config file
+! Some thing I always want enabled
+
+URxvt*font: xft:Anonymice Nerd Font:normal:pixelsize=17
+URxvt*scrollBar: false
+URxvt*depth: 32
+URxvt.letterSpace: 1
+URxvt.background: [90]#282A36
+
+!Extensions
+!URxvt.perl-ext-common: config-reload,font-size
+
+!Change Font Size
+URxvt.keysym.C-equal:     perl:font-size:increase
+URxvt.keysym.C-minus:   perl:font-size:decrease
+URxvt.keysym.C-parenright:  perl:font-size:reset
+URxvt.font-size.step: 2

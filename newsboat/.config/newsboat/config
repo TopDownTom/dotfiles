@@ -1,0 +1,22 @@
+# Set defaults
+auto-reload yes
+player mpv
+browser "/usr/bin/firefox --private-window %u"
+
+# Keybinds
+unbind-key j
+unbind-key k
+unbind-key q
+unbind-key l
+
+bind-key H	toggle-show-read-feeds
+bind-key h	quit
+bind-key j	down
+bind-key k	up
+bind-key l	open
+bind-key U	show-urls
+
+macro m set browser "tsp mpv --ytdl --force-window %u"; open-in-browser ; set browser "/usr/bin/firefox %u"
+
+# Colors
+highlight feedlist ".*(0/0))" black

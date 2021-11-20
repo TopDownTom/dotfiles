@@ -1,0 +1,35 @@
+" This line should not be removed as it ensures that various options are
+" properly set to work with the Vim-related packages available in Debian.
+runtime! debian.vim
+
+" Syntax highlighting
+if has("syntax")
+  syntax on
+endif
+
+" Source my functions-file
+source /home/tom/.files/vim/.config/vim/vimFunctions
+
+" Set sane defaults
+set number
+set relativenumber
+set nohlsearch
+
+" Custom functions. Comments in functions-file
+nnoremap \c :call ColorColumn()<cr>
+noremap \p :call MakePdf()<cr>
+vmap # :s/^/#/
+vmap ## :s/^#//
+autocmd FileType tex inoremap <C-y> \textit{}<++><Esc>T{i
+autocmd FileType tex inoremap <leader>b \textbf{}<++><Esc>T{i
+
+" For Mutt compatability, limits the text width "
+au BufRead /tmp/mutt-* set tw=72
+
+" Automatically deletes all trailing whitespace and newlines at end of file on save. LARBS.
+autocmd BufWritePre * %s/\s\+$//e
+autocmd BufWritePre * %s/\n\+\%$//e
+autocmd BufWritePre *.[ch] %s/\%$/\r/e
+
+" Automatically compile a C program in the present directory
+autocmd FileWritePost !gcc % -o %:r

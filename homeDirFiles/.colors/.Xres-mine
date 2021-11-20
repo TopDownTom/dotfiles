@@ -1,0 +1,47 @@
+! Default values I would like accessible to multiple objects
+#include ".urxvtrc"
+
+*.foreground: #F8F8F2
+URxvt.background: [90]#282A36
+
+!! This is my old color config, likely wont use again but kept for notes on each color number
+!! black----->
+*.color0:       #000000
+!! 4: Highlighted dirs font color & vi comments
+*.color4:       red
+
+!! red----->
+!! numbers in Vi
+*.color1:       #b6465f
+*.color9:       #b6465f
+!! 13: Image/gif/webm 
+*.color13:      #dd5c3c
+
+!! green----->
+!! 2: Highlighted dir highlight color
+*.color2:       #181a23
+
+!! 10: ls output & user@host
+*.color10:	#6992c5
+*.color8:       #6992c5
+
+!! yellow----->
+*.color3:       #f0c987
+*.color11:      #f0c987
+! 14: Linked filetypes
+*.color14:      #f0c987
+
+!! blue----->
+! 12: Dir font color
+*.color12:      #6992c5
+
+!! magenta----->
+*.color5:       #afb3f7
+
+!! cyan----->
+!! Python functions (int,range etc..), .mp3 files
+*.color6:       #1d8a99
+
+!! white----->
+*.color7:       #ff00ff
+*.color15:      #cccccc

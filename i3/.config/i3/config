@@ -1,0 +1,216 @@
+# i3 config file (v4)
+
+########## Initialize key parameters ##########
+set $mod4 Mod4
+set $mod Mod1
+set $b bindsym
+set $ws workspace
+set $cont container
+set $sh bash
+set $noauto --no-auto-back-and-forth
+
+font xft:Anonymice Nerd Font 10
+
+default_orientation horizontal
+default_border none
+$ws_layout tabbed
+focus_follows_mouse no
+show_marks yes
+
+$b $mod+Shift+Insert reload
+$b $mod+Shift+Home restart
+$b $mod+Shift+End exec "i3-nagbar -t warning -m 'Exit i3?' -b 'Yes, exit i3' 'i3-msg exit'"
+
+floating_modifier $mod
+$b $mod+s sticky toggle
+
+$b $mod+Return exec $TERMINAL
+$b $mod+Shift+Return exec st
+
+######### Autostart ##########
+exec --no-startup-id exec $TERMINAL -name math -e bc -lq
+exec --no-startup-id exec $TERMINAL -name floatingShell -e tmux new -s float
+exec --no-startup-id exec $TERMINAL
+exec --no-startup-id exec dunst
+
+$b $mod+d exec dmenu_run
+
+########## Colors ##########
+set_from_resource $border i3wm.color12 #ffffff
+set_from_resource $borderInd i3wm.color12 #ffffff
+
+### Colors for Windows ###
+# class                 	border  	backgr. 	text    	indicator 	child_border
+client.focused			$border		#2f343f		#eaeaeb		$borderInd	$border
+client.focused_inactive		#2f343f		#2f343f		#eaeaeb		#2f343f		#2f343f
+client.unfocused		#2f343f		#171a1f		#757575		#2f343f		#2f343f
+client.urgent			#ff0000		#900000		#eaeaeb		#6a9fb5		#ff0000
+client.placeholder		#000000		#0c0c0c		#eaeaeb		#6a9fb5		#4d4d4d
+client.background		#2f343f
+
+########## Windows ##########
+for_window [class="^.*"] border pixel 2
+smart_borders on
+hide_edge_borders smart
+$b $mod+x kill
+
+$b $mod+h focus left
+$b $mod+j focus down
+$b $mod+k focus up
+$b $mod+l focus right
+
+$b $mod+Shift+h move left
+$b $mod+Shift+j move down
+$b $mod+Shift+k move up
+$b $mod+Shift+l move right
+
+$b $mod+y resize shrink width 5 px or 5 ppt
+$b $mod+i resize grow height 5 px or 5 ppt
+$b $mod+u resize shrink height 5 px or 5 ppt
+$b $mod+o resize grow width 5 px or 5 ppt
+
+floating_modifier Mod4
+
+$b $mod+backslash split h
+
+$b $mod+minus split v
+
+$b $mod+Scroll_Lock fullscreen toggle
+
+$b $mod+Shift+t layout tabbed
+$b $mod+Shift+e layout toggle split
+
+$b $mod+Shift+space floating toggle
+
+$b $mod+space focus mode_toggle
+
+$b $mod+a focus parent
+
+##### Window-Specific Settings #####
+
+for_window [instance="cmus"] move $noauto scratchpad
+
+for_window [class="Gscreenshot"] floating enable
+
+for_window [instance="floatingShell"] move $noauto scratchpad
+
+for_window [instance="math"] move $noauto scratchpad
+
+for_window [instance="protonCLI"] move $noauto scratchpad
+
+##### i3-gaps #####
+set_from_resource $gapSize i3wm.gapSize 2
+set_from_resource $borderThickness i3wm.borderThickness 10
+smart_gaps on
+gaps inner 1
+gaps outer 1
+
+$b $mod+less gaps inner current minus 10
+$b $mod+greater gaps inner current plus 10
+$b $mod+Shift+less gaps inner current minus 20
+$b $mod+Shift+greater gaps inner current plus 20
+
+$b $mod+slash gaps inner current set 0
+$b $mod+Shift+question gaps outer current set 0 gaps inner current set 0
+
+########## Workspace ##########
+# Switching to workspaces
+# Including 'number N' allows renaming workspaces, but still reachable so long as num is first character
+$b $mod+1 $ws number 1
+$b $mod+2 $ws number 2
+$b $mod+3 $ws number 3
+$b $mod+4 $ws number 4
+$b $mod+5 $ws number 5
+$b $mod+6 $ws number 6
+$b $mod+7 $ws number 7
+$b $mod+8 $ws number 8
+$b $mod+9 $ws number 9
+$b $mod+0 $ws number 0
+
+# Moving containers to workspaces
+$b $mod+Shift+1 move $cont to $ws number 1
+$b $mod+Shift+2 move $cont to $ws number 2
+$b $mod+Shift+3 move $cont to $ws number 3
+$b $mod+Shift+4 move $cont to $ws number 4
+$b $mod+Shift+5 move $cont to $ws number 5
+$b $mod+Shift+6 move $cont to $ws number 6
+$b $mod+Shift+7 move $cont to $ws number 7
+$b $mod+Shift+8 move $cont to $ws number 8
+$b $mod+Shift+9 move $cont to $ws number 9
+$b $mod+Shift+0 move $cont to $ws number 0
+
+# Put workspaces on specific monitors
+$ws 0 output $DISPLAY1
+$ws 1 output $DISPLAY1
+$ws 2 output $DISPLAY1
+$ws 3 output $DISPLAY2
+$ws 4 output $DISPLAY2
+$ws 5 output $DISPLAY2
+$ws 6 output $DISPLAY2
+$ws 7 output $DISPLAY3
+$ws 8 output $DISPLAY3
+$ws 9 output $DISPLAY3
+
+# Kill or rename a workspace
+$b $mod+q exec i3-input -F '[$ws=^%s$] kill' -P 'WS: '
+$b $mod+r exec i3-input -F 'rename workspace to "%s"' -P 'New name: '
+
+# Marking windows
+$b $mod+apostrophe exec i3-input -F 'mark %s' -l 4 -P 'Mark: '
+$b $mod+g exec i3-input -F '[con_mark="%s"] focus' -l 4 -P 'Goto: '
+
+########## Multimedia ##########
+$b XF86MonBrightnessUp exec $sh $HOME/docs/scripts/brightControl up
+$b XF86MonBrightnessDown exec $sh $HOME/docs/scripts/brightControl down
+
+$b XF86AudioRaiseVolume exec pamixer -i 5  && pkill -SIGRTMIN+2 i3blocks
+$b XF86AudioLowerVolume exec pamixer -d 5 && pkill -SIGRTMIN+2 i3blocks
+$b XF86AudioMute exec pamixer -t && pkill -SIGRTMIN+2 i3blocks
+# To stay on keyboard + right hand control
+$b $mod+bracketright exec pamixer -i 5  && pkill -SIGRTMIN+2 i3blocks
+$b $mod+bracketleft exec pamixer -d 5 && pkill -SIGRTMIN+2 i3blocks
+$b $mod+Shift+backslash exec pamixer -t && pkill -SIGRTMIN+2 i3blocks
+
+### cmus-remote ###
+$b XF86AudioPrev exec cmus-remote --prev && pkill -SIGRTMIN+1 i3blocks
+$b XF86AudioNext exec cmus-remote --next && pkill -SIGRTMIN+1 i3blocks
+$b XF86AudioPlay exec $sh $HOME/docs/scripts/launchCmus && pkill -SIGRTMIN+1 i3blocks
+# To stay on keyboard + right hand control
+$b $mod+p exec /home/tom/docs/scripts/launchCmus && pkill -SIGRTMIN+1 i3blocks
+$b $mod+Shift+bracketright exec cmus-remote --next && pkill -SIGRTMIN+1 i3blocks
+$b $mod+Shift+bracketleft exec cmus-remote --prev && pkill -SIGRTMIN+1 i3blocks
+
+########## User-Defined Keybinds ##########
+$b $mod+F2 exec $HOME/docs/scripts/timer
+$b $mod+F3 exec $HOME/docs/scripts/pomoTimer
+$b $mod+F7 exec $HOME/docs/scripts/videoOutput
+$b $mod+f [instance="floatingShell"] scratchpad show
+$b $mod+Shift+f exec pcmanfm
+$b $mod+n [instance="math"] scratchpad show
+$b $mod+m [instance="cmus"] scratchpad show
+$b $mod+Shift+p exec $sh $HOME/docs/scripts/screenShot
+$b $mod+v exec mpvhd
+$b $mod+w exec --no-startup-id firefox --profile $HOME/.mozilla/firefox/managed --private-window file:///$HOME/.mozilla/firefox/managed/startpage.html
+$b $mod+Shift+w exec chromium
+$b $mod+Prior exec i3-msg -t run_command 'move scratchpad'
+$b $mod+Next exec i3-msg -t run_command 'scratchpad show'
+
+########## System Related ##########
+$b $mod+Shift+equal exec --no-startup-id i3lock -i $HOME/.bsod.png
+
+########## i3bar ##########
+bar {
+	colors {
+		background #000000
+		separator #b3b3b3
+		#                  border  backgr. text
+		focused_workspace  #ff0000 #000000 #ff0000
+		active_workspace   #333333 #5f676a #ffffff
+		inactive_workspace #333333 #222222 #888888
+		urgent_workspace   #2f343a #900000 #ffffff
+	}
+	tray_output none
+	font xft:Anonymice Nerd Font 13
+	position top
+	status_command i3blocks -c ~/.config/i3/i3blocks.conf
+}

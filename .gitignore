@@ -1,0 +1,21 @@
+!.gitignore
+# Ignore ephemeral and ever-changing files
+polyMediaOutput
+volLevel
+touchpad
+
+# Cmus
+cmus/.config/cmus/*
+!cmus/.config/cmus/autosave
+
+# Firefox
+homeDirFiles/.mozilla/
+!homeDirFiles/.mozilla/firefox/managed/chrome/userChrome.css
+!homeDirFiles/.mozilla/firefox/managed/startpage.html
+!homeDirFiles/.mozilla/firefox/managed/background.png
+
+# newsboat
+newsboat/.local/
+
+#vim
+vim/.config/vim/.netrwhist

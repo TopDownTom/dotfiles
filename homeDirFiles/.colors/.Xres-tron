@@ -1,0 +1,54 @@
+#include ".urxvtrc"
+!tron
+
+! special----->
+URxvt*background: 	[95]#000000
+*.foreground:   #e6e6e6
+*.cursorColor:  #cccccc
+
+! black----->
+*.color0:       #000000
+
+! 4: Highlighted dirs font color & vi comments
+*.color4:       #68c4c4
+
+! red----->
+! numbers in Vi
+*.color1:       #b6465f
+*.color9:       #b6465f
+! 13: Image/gif/webm 
+*.color13:      #794dde
+
+! green----->
+! 2: Highlighted dir highlight color
+*.color2:       #31B756  
+
+! 10: ls output & user@host
+*.color10:	#3eefef
+*.color8:       #3eefef
+
+! yellow----->
+*.color3:       #f0c987
+*.color11:      #f0c987
+! 14: Linked filetypes
+*.color14:      #f0c987
+
+! blue----->
+! 12: Dir font color
+*.color12:      #5dd0d0
+
+! magenta----->
+*.color5:       #afb3f7
+
+! cyan----->
+! Python functions (int,range etc..), .mp3 files
+*.color6:       #1d8a99
+
+! white----->
+*.color7:       #ff00ff
+*.color15:      #cccccc
+
+*colorBorder: #01cbba
+*borderThickness: 1
+*colorIndicator: #b3fff8
+*gapSize: 1

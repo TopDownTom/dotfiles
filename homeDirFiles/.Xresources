@@ -1,0 +1,5 @@
+! Default values I would like accessible to multiple objects
+#include ".urxvtrc"
+
+! Xresource theme
+#include ".Xres-theme"

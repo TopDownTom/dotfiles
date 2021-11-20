@@ -1,0 +1,53 @@
+[global]
+    alignment = right
+    allow_markup = yes
+    bounce_freq = 1
+    browser = /usr/bin/firefox --new-private-window
+    dmenu = /usr/bin/dmenu -p dunst:
+    follow = none
+    font = Monospace 10
+    format = "<b>%s</b>\n%b"
+    # geometry [{width}]x{height}][+/-{x}+/-{y}]
+    # geometry = "widthxheight+/-{x}+/-{y}"
+    geometry = "0x5-10+30"
+    history_length = 20
+    horizontal_padding = 8
+    idle_threshold = 120
+    ignore_newline = no
+    indicate_hidden = yes
+    line_height = 0
+    monitor = 0
+    padding = 9
+    separator_color = frame
+    separator_height = 1
+    show_age_threshold = 60
+    show_indicators = yes
+    shrink = no
+    sort = yes
+    startup_notification = false
+    sticky_history = yes
+    transparency = 0
+    word_wrap = no
+
+[frame]
+    width = 1
+    color = "#e89609"
+
+[urgency_low]
+    background = "#000000"
+    foreground = "#e89609"
+    timeout = 10
+
+[urgency_normal]
+    background = "#000000"
+    foreground = "#FFFFFF"
+    timeout = 20
+
+[urgency_critical]
+    background = "#801515"
+    foreground = "#D46A6A"
+    timeout = 0
+
+[i3blocks]
+    summary = "*"
+    script = ~/.bin/notify
