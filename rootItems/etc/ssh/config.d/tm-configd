@@ -9,5 +9,6 @@ PermitRootLogin no
 
 AllowAgentForwarding yes
 
-ClientAliveInterval 0
-ClientAliveCountMax 3
+TCPKeepAlive yes
+ClientAliveInterval 60
+ClientAliveCountMax 60
