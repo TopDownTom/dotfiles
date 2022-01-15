@@ -12,6 +12,9 @@ urxvtd &
 # start redshift
 redshift &
 
+# start networkmanager applet
+nm-applet &
+
 ### X Settings
 
 # Set X refresh rate, helps increase scroll speed
@@ -19,7 +22,7 @@ xset r rate 300 50
 # Switch capslock and escape key
 setxkbmap -option caps:swapescape
 # External monitor settings, disables power-saving modes which otherwise sleeps the computer
-xset s off 
+xset s off
 xset -dpms
 # Disable touchpad
 xinput disable "SynPS/2 Synaptics TouchPad"
