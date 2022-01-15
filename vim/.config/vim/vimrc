@@ -33,3 +33,12 @@ autocmd BufWritePre *.[ch] %s/\%$/\r/e
 
 " Automatically compile a C program in the present directory
 autocmd FileWritePost !gcc % -o %:r
+
+" Stop all autoindents
+" http://richard.cyganiak.de/blog/2005/10/vim-switching-off-auto-indentation/
+set nocindent
+set nosmartindent
+set noautoindent
+set indentexpr=
+filetype indent off
+filetype plugin indent off
