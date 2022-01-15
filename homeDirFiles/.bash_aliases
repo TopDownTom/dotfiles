@@ -17,6 +17,7 @@ $a ..='cd ../'
 # Youtube-dl related
 $a ytd='$HOME/docs/scripts/youtubedl' # more general script than the two aliases
 $a ytpm='youtube-dl -f 18 -i -o "%(title)s.mp4"' # downloads [m]usic playlists in .mp4 format with their native filenames
+$a ytv='youtube-dl -f 22 -i -o "%(title)s.mp4"' # downloads [v]ideos at 'best' quality
 $a ytpv='youtube-dl -f 137 -i -o "%(title)s.mp4-video"' # downloads [v]ideo playlists in .mp4 format with their native filenames
 $a ytpa='youtube-dl -f 140 -i -o "%(title)s.m4a"' # downloads [v]ideo playlists in .mp4 format with their native filenames
 
@@ -29,7 +30,7 @@ $a grindCompare='py3 $HOME/docs/coffee/coffeegrindsize/App/dist/coffeegrindsize.
 $a i3lockb='i3lock -c 000000'
 $a n='function _title(){ rxvt -e $1 & disown; };_title' # gives windows titles (not useful w/o window titles displayed)
 $a net='$HOME/docs/scripts/net'
-$a protonvpn='$HOME/dls/builds/protonvpn-cli/pvpn/bin/protonvpn'
+$a notif='notify-send done && watch -n1 "#hi im done"'
 $a polyReload='/bin/bash $HOME/.files/polybar/.config/polybar/launch'
 $a py3='`which python3`'
 $a pyGen='pythonScriptGen'
