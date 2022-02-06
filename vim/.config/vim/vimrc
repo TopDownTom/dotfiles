@@ -42,3 +42,8 @@ set noautoindent
 set indentexpr=
 filetype indent off
 filetype plugin indent off
+
+" Set tabs to two spaces
+set expandtab
+set tabstop=2
+set shiftwidth=2
