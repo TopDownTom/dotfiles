@@ -25,7 +25,6 @@ floating_modifier $mod
 $b $mod+s sticky toggle
 
 $b $mod+Return exec $TERMINAL
-$b $mod+Shift+Return exec st
 
 ######### Autostart ##########
 exec --no-startup-id exec $TERMINAL -name math -e bc -lq
@@ -194,6 +193,15 @@ $b $mod+w exec --no-startup-id firefox --profile $HOME/.mozilla/firefox/managed 
 $b $mod+Shift+w exec chromium
 $b $mod+Prior exec i3-msg -t run_command 'move scratchpad'
 $b $mod+Next exec i3-msg -t run_command 'scratchpad show'
+
+########## Mouse Movement ##########
+$b $mod+Shift+Up exec xdotool mousemove_relative -- 0 -10 # left
+$b $mod+Shift+Down exec xdotool mousemove_relative 0 10 # right
+$b $mod+Shift+Left exec xdotool mousemove_relative -- -10 0 # up
+$b $mod+Shift+Right exec xdotool mousemove_relative 10 0 # down
+$b $mod+Left exec xdotool click 1 # l click
+$b $mod+Down exec xdotool click 2 # middle click
+$b $mod+Right exec xdotool click 3 # r click
 
 ########## System Related ##########
 $b $mod+Shift+equal exec --no-startup-id i3lock -i $HOME/.bsod.png
