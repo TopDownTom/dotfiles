@@ -8,6 +8,8 @@ URxvt.letterSpace: 1
 URxvt.background: [90]#282A36
 
 !Extensions
+!font-size and config-reload deps: perl-common-sense, perl-anyevent, perl-params-util, perl-module-build
+!perl-sub-install, perl-sub-exporter, perl-test-exception, perl-linux-fd
 URxvt.perl-ext-common: config-reload,font-size
 
 !Change Font Size
