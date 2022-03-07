@@ -1,4 +1,3 @@
-#include ".urxvtrc"
 !tron
 
 ! special----->
@@ -16,12 +15,12 @@ URxvt*background: 	[95]#000000
 ! numbers in Vi
 *.color1:       #b6465f
 *.color9:       #b6465f
-! 13: Image/gif/webm 
+! 13: Image/gif/webm
 *.color13:      #794dde
 
 ! green----->
 ! 2: Highlighted dir highlight color
-*.color2:       #31B756  
+*.color2:       #31B756
 
 ! 10: ls output & user@host
 *.color10:	#3eefef

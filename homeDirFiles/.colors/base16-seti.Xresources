@@ -1,6 +1,5 @@
-#include ".urxvtrc"
 ! Base16 Seti UI
-! Scheme: 
+! Scheme:
 
 #define base00 #151718
 #define base01 #8ec43d

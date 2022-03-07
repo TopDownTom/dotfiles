@@ -1,6 +1,3 @@
-! Default values I would like accessible to multiple objects
-#include ".urxvtrc"
-
 ! Dracula Xresources palette
 *.foreground: #F8F8F2
 URxvt.background: [90]#282A36

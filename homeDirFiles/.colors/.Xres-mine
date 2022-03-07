@@ -1,6 +1,3 @@
-! Default values I would like accessible to multiple objects
-#include ".urxvtrc"
-
 *.foreground: #F8F8F2
 URxvt.background: [90]#282A36
 
@@ -14,7 +11,7 @@ URxvt.background: [90]#282A36
 !! numbers in Vi
 *.color1:       #b6465f
 *.color9:       #b6465f
-!! 13: Image/gif/webm 
+!! 13: Image/gif/webm
 *.color13:      #dd5c3c
 
 !! green----->
