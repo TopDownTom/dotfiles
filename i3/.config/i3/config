@@ -9,7 +9,7 @@ set $cont container
 set $sh bash
 set $noauto --no-auto-back-and-forth
 
-font xft:Anonymice Nerd Font 10
+font xft:Anonymice Nerd Font 12
 
 default_orientation horizontal
 default_border none
@@ -195,10 +195,10 @@ $b $mod+Prior exec i3-msg -t run_command 'move scratchpad'
 $b $mod+Next exec i3-msg -t run_command 'scratchpad show'
 
 ########## Mouse Movement ##########
-$b $mod+Shift+Up exec xdotool mousemove_relative -- 0 -10 # left
-$b $mod+Shift+Down exec xdotool mousemove_relative 0 10 # right
-$b $mod+Shift+Left exec xdotool mousemove_relative -- -10 0 # up
-$b $mod+Shift+Right exec xdotool mousemove_relative 10 0 # down
+$b $mod+Shift+Up exec xdotool mousemove_relative -- 0 -15 # left
+$b $mod+Shift+Down exec xdotool mousemove_relative 0 15 # right
+$b $mod+Shift+Left exec xdotool mousemove_relative -- -15 0 # up
+$b $mod+Shift+Right exec xdotool mousemove_relative 15 0 # down
 $b $mod+Left exec xdotool click 1 # l click
 $b $mod+Down exec xdotool click 2 # middle click
 $b $mod+Right exec xdotool click 3 # r click
@@ -218,7 +218,7 @@ bar {
 		urgent_workspace   #2f343a #900000 #ffffff
 	}
 	tray_output none
-	font xft:Anonymice Nerd Font 13
+	font xft:Anonymice Nerd Font 14
 	position top
 	status_command i3blocks -c ~/.config/i3/i3blocks.conf
 }

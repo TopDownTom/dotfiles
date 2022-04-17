@@ -1,7 +1,7 @@
 ! URxvt config file
 ! Some thing I always want enabled
 
-URxvt*font: xft:Anonymice Nerd Font:normal:pixelsize=17
+URxvt*font: xft:Anonymice Nerd Font:normal:pixelsize=19
 URxvt*scrollBar: false
 URxvt*depth: 32
 URxvt.letterSpace: 1
