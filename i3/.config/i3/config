@@ -39,13 +39,13 @@ set_from_resource $border i3wm.color12 #ffffff
 set_from_resource $borderInd i3wm.color12 #ffffff
 
 ### Colors for Windows ###
-# class                 	border  	backgr. 	text    	indicator 	child_border
-client.focused			$border		#2f343f		#eaeaeb		$borderInd	$border
-client.focused_inactive		#2f343f		#2f343f		#eaeaeb		#2f343f		#2f343f
-client.unfocused		#2f343f		#171a1f		#757575		#2f343f		#2f343f
-client.urgent			#ff0000		#900000		#eaeaeb		#6a9fb5		#ff0000
-client.placeholder		#000000		#0c0c0c		#eaeaeb		#6a9fb5		#4d4d4d
-client.background		#2f343f
+# class                   border    backgr.   text      indicator   child_border
+client.focused            $border   #2f343f   #eaeaeb   $borderInd  $border
+client.focused_inactive   #2f343f   #2f343f   #eaeaeb   #2f343f     #2f343f
+client.unfocused          #2f343f   #171a1f   #757575   #2f343f     #2f343f
+client.urgent             #ff0000   #900000   #eaeaeb   #6a9fb5     #ff0000
+client.placeholder        #000000   #0c0c0c   #eaeaeb   #6a9fb5     #4d4d4d
+client.background         #2f343f
 
 ########## Windows ##########
 for_window [class="^.*"] border pixel 2
