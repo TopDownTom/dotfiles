@@ -182,7 +182,7 @@ $b $mod+Shift+bracketleft exec cmus-remote --prev && pkill -SIGRTMIN+1 i3blocks
 ########## User-Defined Keybinds ##########
 $b $mod+F2 exec $HOME/docs/scripts/timer
 $b $mod+F3 exec $HOME/docs/scripts/pomoTimer
-$b $mod+F7 exec $HOME/docs/scripts/videoOutput
+$b $mod+F7 exec $HOME/docs/scripts/display
 $b $mod+f [instance="floatingShell"] scratchpad show
 $b $mod+Shift+f exec pcmanfm
 $b $mod+n [instance="math"] scratchpad show
