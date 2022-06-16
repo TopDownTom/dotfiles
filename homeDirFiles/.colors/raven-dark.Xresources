@@ -1,3 +1,4 @@
+#include ".urxvtrc"
 !raven-dark
 #define t_bg_floor     #010000
 #define t_bg_dip       #2B2B28
