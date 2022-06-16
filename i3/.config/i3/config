@@ -195,10 +195,10 @@ $b $mod+Prior exec i3-msg -t run_command 'move scratchpad'
 $b $mod+Next exec i3-msg -t run_command 'scratchpad show'
 
 ########## Mouse Movement ##########
-$b $mod+Shift+Up exec xdotool mousemove_relative -- 0 -15 # left
-$b $mod+Shift+Down exec xdotool mousemove_relative 0 15 # right
-$b $mod+Shift+Left exec xdotool mousemove_relative -- -15 0 # up
-$b $mod+Shift+Right exec xdotool mousemove_relative 15 0 # down
+$b $mod+Shift+Up exec xdotool mousemove_relative -- 0 -30 # left
+$b $mod+Shift+Down exec xdotool mousemove_relative 0 30 # right
+$b $mod+Shift+Left exec xdotool mousemove_relative -- -30 0 # up
+$b $mod+Shift+Right exec xdotool mousemove_relative 30 0 # down
 $b $mod+Left exec xdotool click 1 # l click
 $b $mod+Down exec xdotool click 2 # middle click
 $b $mod+Right exec xdotool click 3 # r click
