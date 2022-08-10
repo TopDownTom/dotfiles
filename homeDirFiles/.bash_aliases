@@ -18,7 +18,7 @@ $a ..='cd ../'
 $a ytd='$HOME/docs/scripts/youtubedl' # more general script than the two aliases
 $a ytpm='youtube-dl -f 18 -i -o "%(title)s.mp4"' # downloads [m]usic playlists in .mp4 format with their native filenames
 $a ytpv='youtube-dl -f 137 -i -o "%(title)s.mp4-video"' # downloads [v]ideo playlists in .mp4 format with their native filenames
-$a ytpa='youtube-dl -f 140 -i -o "%(title)s.m4a"' # downloads [v]ideo playlists in .mp4 format with their native filenames
+$a ytpa='youtube-dl -f 140 -i -o "%(title)s.m4a"' # downloads [a]udio playlists in .m4a format with their native filenames
 
 # Command shorthand
 $a bc='bc -lq'
