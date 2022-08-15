@@ -25,6 +25,7 @@ floating_modifier $mod
 $b $mod+s sticky toggle
 
 $b $mod+Return exec $TERMINAL
+$b $mod+Shift+Return exec open_cwd
 
 ######### Autostart ##########
 exec --no-startup-id exec $TERMINAL -name math -e bc -lq
