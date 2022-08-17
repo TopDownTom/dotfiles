@@ -16,3 +16,9 @@ function! MakePdf()
 	:silent execute '!makePDF ' . expand("%")
 	:redraw!
 endfunction
+
+" Calls my script (runProg) to run the program in a new terminal window.
+function! RunProg()
+	:silent execute '!runProg ' . expand("%")
+	:redraw!
+endfunction

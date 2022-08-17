@@ -18,6 +18,7 @@ set nohlsearch
 " Custom functions. Comments in functions-file
 nnoremap \c :call ColorColumn()<cr>
 noremap \p :call MakePdf()<cr>
+noremap \r :call RunProg()<cr>
 vmap # :s/^/#/
 vmap ## :s/^#//
 autocmd FileType tex inoremap <C-y> \textit{}<++><Esc>T{i
