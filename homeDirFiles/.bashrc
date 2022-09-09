@@ -31,9 +31,12 @@ function gitBranch {
 function gitTag {
 	[ -d .git ] && git describe 2> /dev/null
 }
+function gitPorcelain {
+  [ -d .git ] &&  git status --porcelain | awk '{print $1}' | uniq -c | tr -d '\n' | sed -r 's/[[:blank:]]+//g; s/([[:digit:]])([[:alpha:]])/\1\2 /g'
+}
 
 # Set PS1 variable
-PS1='\033[01;34m\w\033[00m \e[1;32m$(gitBranch) $(gitTag)  \e[0m\n\$ '
+PS1='\033[01;34m\w\033[00m \e[1;32m$(gitBranch) $(gitTag) \e[1;31m$(gitPorcelain)\e[0m \e[0m\n\$ '
 #PS1='\033[01;34m\w\033[00m \e[1;32m \e[0m\n\$ '
 
 # enable color support of ls and also add handy aliases
