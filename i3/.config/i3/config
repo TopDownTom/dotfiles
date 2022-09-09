@@ -30,6 +30,7 @@ $b $mod+Shift+Return exec open_cwd
 ######### Autostart ##########
 exec --no-startup-id exec $TERMINAL -name math -e bc -lq
 exec --no-startup-id exec $TERMINAL -name floatingShell -e tmux new -s float
+exec --no-startup-id exec $TERMINAL -name cmus -e cmus
 exec --no-startup-id exec $TERMINAL
 exec --no-startup-id exec dunst
 
