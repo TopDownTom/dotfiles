@@ -48,7 +48,7 @@ $a vimrc='vi $HOME/.files/vim/.config/vim/vimrc'
 $a vip='vi $HOME/.files/homeDirFiles/.profile'
 $a vipoly='vi $HOME/.files/polybar/.config/polybar/config'
 $a vis='vi $HOME/.files/st/.config/st/config.h'
-$a vix='vi $HOME/.files/homeDirFiles/.Xresources'
+$a vix='vi $HOME/.files/homeDirFiles/.xinitrc'
 
 # Aliases related to directories
 $a gM='cd /run/media/`whoami`'
