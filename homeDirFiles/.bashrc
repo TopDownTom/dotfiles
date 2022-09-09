@@ -29,14 +29,18 @@ function gitBranch {
   [ -d .git ] && git branch | awk '/\*/{print $2}'
 }
 function gitTag {
-	[ -d .git ] && git describe 2> /dev/null
+	[ -d .git ] && git describe 2> /dev/null;
+  [ $? -eq 128 ] && echo "x.x"
 }
 function gitPorcelain {
-  [ -d .git ] &&  git status --porcelain | awk '{print $1}' | uniq -c | tr -d '\n' | sed -r 's/[[:blank:]]+//g; s/([[:digit:]])([[:alpha:]])/\1\2 /g'
+  [ -d .git ] &&  git status --porcelain | awk '{print $1}' | uniq -c | tr -d '\n' | sed -r 's/[[:blank:]]+//g; s/([[:digit:]])([[:alpha:]])/\1\2,/g'
+}
+function gitAheadBehind {
+  [ -d .git ] && git status -b --short | awk '/##/{print $3" "$4}'
 }
 
 # Set PS1 variable
-PS1='\033[01;34m\w\033[00m \e[1;32m$(gitBranch) $(gitTag) \e[1;31m$(gitPorcelain)\e[0m \e[0m\n\$ '
+PS1='\033[1;34m\w\033[00m \e[1;32m$(gitBranch) \e[0;32m$(gitTag) \e[0;31m$(gitPorcelain) \e[0;33m$(gitAheadBehind)\e[0m \e[0m\n\$ '
 #PS1='\033[01;34m\w\033[00m \e[1;32m \e[0m\n\$ '
 
 # enable color support of ls and also add handy aliases
