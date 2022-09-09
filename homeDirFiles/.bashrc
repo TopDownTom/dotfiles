@@ -33,7 +33,7 @@ function gitTag {
   [ $? -eq 128 ] && echo "x.x"
 }
 function gitPorcelain {
-  [ -d .git ] &&  git status --porcelain | awk '{print $1}' | uniq -c | tr -d '\n' | sed -r 's/[[:blank:]]+//g; s/([[:digit:]])([[:alpha:]])/\1\2,/g'
+  [ -d .git ] &&  git status --porcelain | awk '{print $1}' | uniq -c | tr -d '\n' | sed -r 's/[[:blank:]]+//g; s/([[:digit:]])([[:alpha:]])/\1\2 /g'
 }
 function gitAheadBehind {
   [ -d .git ] && git status -b --short | awk '/##/{print $3" "$4}'
