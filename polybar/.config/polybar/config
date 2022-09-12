@@ -53,8 +53,8 @@ module-margin-right = 2
 font-0 = DaddyTimeMono Nerd Font:pixelsize=9:antialias=true
 
 modules-left = i3 publicIP
-modules-center = timerNotify 
-modules-right = mediatitle volLevel cpu usedMem sysTemp date 
+modules-center = timerNotify
+modules-right = mediatitle volLevel cpu usedMem sysTemp date
 
 tray-position = right
 tray-padding = 1
@@ -73,7 +73,7 @@ cursor-scroll = ns-resize
 
 ;[module/cpuSpeed]
 ;type = custom/script
-;exec = $HOME/docs/scripts/cpuSpeed
+;exec = $SCRIPT_DIR/cpuSpeed
 ;interval = 1
 ;format-foreground = ${colors.alert}
 
@@ -82,47 +82,47 @@ type = custom/menu
 format-foreground = ${colors.teal}
 expand-right = true
 label-open = Wal
-label-close = "[X]" 
+label-close = "[X]"
 label-separator = " "
 
 menu-0-0 = [ New
 menu-0-0-exec = walThemeSave new
 menu-0-1 = Save
 menu-0-1-exec = walThemeSave save
-menu-0-2 = Load 
+menu-0-2 = Load
 menu-0-2-exec = walThemeSave load
-menu-0-3 = Default 
+menu-0-3 = Default
 menu-0-3-exec = walThemeSave default
 menu-0-4 = Inplace ]
 menu-0-4-exec = walThemeSave inplace
 
 [module/usedMem]
 type = custom/script
-exec = $HOME/docs/scripts/usedMem
+exec = $SCRIPT_DIR/usedMem
 interval = 3
 format-background = white
 
 [module/sysTemp]
 type = custom/script
-exec = $HOME/docs/scripts/sysTemp
+exec = $SCRIPT_DIR/sysTemp
 interval = 5
 foreground-format = white
 
 [module/batCapac]
 type = custom/script
-exec = $HOME/docs/scripts/batLevel
+exec = $SCRIPT_DIR/batLevel
 interval = 30
 format-foreground = white
 
 [module/publicIP]
 type = custom/script
-exec = $HOME/docs/scripts/publicIP
+exec = $SCRIPT_DIR/publicIP
 format-foreground = ${colors.primary}
 
 ;This works, but I need to find a way to update it on tunnel state change
 ;[module/publicIP]
 ;type = custom/ipc
-;hook-0 = $HOME/docs/scripts/publicIP
+;hook-0 = $SCRIPT_DIR/publicIP
 ;hook-1 = ip a | grep enp | grep 'inet ' | awk '{print $2}'
 ;initial = 1
 ;click-left = polybar-msg -p %pid% hook publicIP 2
@@ -132,7 +132,7 @@ format-foreground = ${colors.primary}
 
 [module/lowbat]
 type = custom/script
-exec = $HOME/docs/scripts/batAlarm
+exec = $SCRIPT_DIR/batAlarm
 interval = 20
 format-foreground = #ff0000
 

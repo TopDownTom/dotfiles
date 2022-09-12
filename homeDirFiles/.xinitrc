@@ -28,7 +28,7 @@ xset -dpms
 xinput disable "SynPS/2 Synaptics TouchPad"
 
 # Grab number of displays, set DISPLAYi env var to each connected display
-source $HOME/docs/scripts/numDisplays
+source $SCRIPT_DIR/numDisplays
 
 # Load .Xresources or set a default theme if none present
 [ -f $HOME/.Xres-theme ] && xrdb -load $HOME/.Xresources || \
