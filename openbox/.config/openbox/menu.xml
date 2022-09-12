@@ -22,34 +22,34 @@
 <menu id="3.14" label="Tools">
 
   <menu id="Audio" label="Audio Sinks">
-    <item label="Toggle Sinks"><action name="Execute"><command><![CDATA[bash ~/Tools/movesinks.sh]]></command></action></item>
+    <item label="Toggle Sinks"><action name="Execute"><command><![CDATA[bash $HOME/Tools/movesinks.sh]]></command></action></item>
   </menu>
 
   <menu id="Git" label="Git">
 
 	  <menu id="Push" label="Push">
-	    <item label="Dotfiles"><action name="Execute"><command><![CDATA[bash ~/Tools/gitpush_dotfiles.sh]]></command></action></item>
+	    <item label="Dotfiles"><action name="Execute"><command><![CDATA[bash $HOME/Tools/gitpush_dotfiles.sh]]></command></action></item>
 
-	    <item label="Tools"><action name="Execute"><command><![CDATA[bash ~/Tools/gitpush_tools.sh]]></command></action></item>
+	    <item label="Tools"><action name="Execute"><command><![CDATA[bash $HOME/Tools/gitpush_tools.sh]]></command></action></item>
 
    	  </menu>
 
 	  <menu id="Pull" label="Pull">
-	    <item label="Dotfiles"><action name="Execute"><command><![CDATA[bash ~/Tools/gitpull_dotfiles.sh]]></command></action></item>
-	    <item label="Tools"><action name="Execute"><command><![CDATA[bash ~/Tools/gitpull_tools.sh]]></command></action></item>
+	    <item label="Dotfiles"><action name="Execute"><command><![CDATA[bash $HOME/Tools/gitpull_dotfiles.sh]]></command></action></item>
+	    <item label="Tools"><action name="Execute"><command><![CDATA[bash $HOME/Tools/gitpull_tools.sh]]></command></action></item>
 	  </menu>
 
   </menu>
 
   <menu id="Monitor" label="Monitor">
-    <item label="Monitor Swap OB"><action name="Execute"><command><![CDATA[bash ~/Tools/monitor_swap.sh]]></command></action></item>
-    <item label="Monitor Swap XFCE"><action name="Execute"><command><![CDATA[bash ~/Tools/monitor_swap_xfce.sh]]></command></action></item>
+    <item label="Monitor Swap OB"><action name="Execute"><command><![CDATA[bash $HOME/Tools/monitor_swap.sh]]></command></action></item>
+    <item label="Monitor Swap XFCE"><action name="Execute"><command><![CDATA[bash $HOME/Tools/monitor_swap_xfce.sh]]></command></action></item>
   </menu>
 
   <menu id="Rsync" label="Rsync">
-    <item label="Openbox Misc."><action name="Execute"><command><![CDATA[bash ~/Tools/rsync_obmisc.sh]]></command></action></item>
-    <item label="DotFiles"><action name="Execute"><command><![CDATA[bash ~/Tools/rsync_dotfiles.sh]]></command></action></item>
-    <item label="Pictures to Laptop"><action name="Execute"><command><![CDATA[bash ~/Tools/rsync_picstolaptop.sh]]></command></action></item>
+    <item label="Openbox Misc."><action name="Execute"><command><![CDATA[bash $HOME/Tools/rsync_obmisc.sh]]></command></action></item>
+    <item label="DotFiles"><action name="Execute"><command><![CDATA[bash $HOME/Tools/rsync_dotfiles.sh]]></command></action></item>
+    <item label="Pictures to Laptop"><action name="Execute"><command><![CDATA[bash $HOME/Tools/rsync_picstolaptop.sh]]></command></action></item>
   </menu>
 
   <menu id="Scrot" label="Scrot">
@@ -57,8 +57,8 @@
   </menu>
 
   <menu id="Touchpad" label="Touchpad">
-    <item label="Disable"><action name="Execute"><command><![CDATA[bash ~/Tools/touchpad_disable.sh]]></command></action></item>
-    <item label="Enable"><action name="Execute"><command><![CDATA[bash ~/Tools/touchpad_enable.sh]]></command></action></item>
+    <item label="Disable"><action name="Execute"><command><![CDATA[bash $HOME/Tools/touchpad_disable.sh]]></command></action></item>
+    <item label="Enable"><action name="Execute"><command><![CDATA[bash $HOME/Tools/touchpad_enable.sh]]></command></action></item>
   </menu>
 
 </menu>
@@ -197,7 +197,7 @@
 
 <menu id="0.148935859548519" label="Configs">
 
-    <item label="Conky RC"><action name="Execute"><command><![CDATA[xed ~/.conkyrcOB]]></command></action></item>
+    <item label="Conky RC"><action name="Execute"><command><![CDATA[xed $HOME/.conkyrcOB]]></command></action></item>
 
   <menu id="Firefox" label="Firefox">
     <item label="Firefox Css"><action name="Execute"><command><![CDATA[xed /home/tom/.mozilla/firefox/i379hm42.default/chrome/userChrome.css]]></command></action></item>
@@ -205,19 +205,19 @@
   </menu>
 
   <menu id="Mutt" label="Mutt">
-    <item label="Mutt RC"><action name="Execute"><command><![CDATA[xed ~/.muttrc]]></command></action></item>
+    <item label="Mutt RC"><action name="Execute"><command><![CDATA[xed $HOME/.muttrc]]></command></action></item>
   </menu>
 
   <menu id="0.265121769176215" label="Openbox">
-    <item label="Autostart"><action name="Execute"><command><![CDATA[xed ~/.config/openbox/autostart.sh]]></command></action></item>
-    <item label="RC"><action name="Execute"><command><![CDATA[xed ~/.config/openbox/rc.xml]]></command></action></item>
+    <item label="Autostart"><action name="Execute"><command><![CDATA[xed $HOME/.config/openbox/autostart.sh]]></command></action></item>
+    <item label="RC"><action name="Execute"><command><![CDATA[xed $HOME/.config/openbox/rc.xml]]></command></action></item>
     <item label="Reconfigure Openbox"><action name="Execute"><command><![CDATA[openbox --reconfigure]]></command></action></item>
 
      <separator label="Obmenu-Generator"/>
 
-        <item label="Config"><action name="Execute"><command><![CDATA[xed ~/.config/obmenu-generator/config.pl]]></command></action></item>
-        <item label="Schema"><action name="Execute"><command><![CDATA[xed ~/.config/obmenu-generator/schema.pl]]></command></action></item>
-        <item label="Menu"><action name="Execute"><command><![CDATA[xed ~/.config/openbox/menu.xml]]></command></action></item>
+        <item label="Config"><action name="Execute"><command><![CDATA[xed $HOME/.config/obmenu-generator/config.pl]]></command></action></item>
+        <item label="Schema"><action name="Execute"><command><![CDATA[xed $HOME/.config/obmenu-generator/schema.pl]]></command></action></item>
+        <item label="Menu"><action name="Execute"><command><![CDATA[xed $HOME/.config/openbox/menu.xml]]></command></action></item>
 
      <separator/>
 
@@ -229,9 +229,9 @@
     <item label="rifle.conf"><action name="Execute"><command><![CDATA[xed /etc/ranger/config/rifle.conf]]></command></action></item>
   </menu>
 
-    <item label="Tint2 Panel"><action name="Execute"><command><![CDATA[xed ~/.config/tint2/tint2rc]]></command></action></item>
+    <item label="Tint2 Panel"><action name="Execute"><command><![CDATA[xed $HOME/.config/tint2/tint2rc]]></command></action></item>
     <item label="Theme Configs"><action name="Execute"><command><![CDATA[pcmanfm /usr/share/themes/]]></command></action></item>
-    <item label=".Xresources"><action name="Execute"><command><![CDATA[xed ~/.Xresources]]></command></action></item>
+    <item label=".Xresources"><action name="Execute"><command><![CDATA[xed $HOME/.Xresources]]></command></action></item>
 
 </menu>
 

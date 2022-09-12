@@ -1,9 +1,9 @@
 # SSH-Agent Prompt At Login
-if [ ! -S ~/.ssh/ssh_auth_sock ]; then
+if [ ! -S $HOME/.ssh/ssh_auth_sock ]; then
   eval `ssh-agent`
-  ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
+  ln -sf "$SSH_AUTH_SOCK" $HOME/.ssh/ssh_auth_sock
 fi
-export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
+export SSH_AUTH_SOCK=$HOME/.ssh/ssh_auth_sock
 ssh-add -l > /dev/null || ssh-add
 
 # Update PATH to include user shell scripts
@@ -34,7 +34,7 @@ fi
 #	do
 #		case $wm in
 #			*)
-#				exec startx ~/.xinitrc $wm
+#				exec startx $HOME/.xinitrc $wm
 #				break;;
 #		esac
 #	done

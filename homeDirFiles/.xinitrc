@@ -4,7 +4,7 @@
 picom &
 
 # Set a background
-xwallpaper --stretch ~/.pape.png
+xwallpaper --stretch $HOME/.pape.png
 
 # Start Rxvt-unicode daemon
 urxvtd &
@@ -28,11 +28,11 @@ xset -dpms
 xinput disable "SynPS/2 Synaptics TouchPad"
 
 # Grab number of displays, set DISPLAYi env var to each connected display
-source ~/docs/scripts/numDisplays
+source $HOME/docs/scripts/numDisplays
 
 # Load .Xresources or set a default theme if none present
-[ -f ~/.Xres-theme ] && xrdb -load ~/.Xresources || \
-	( cat ~/.files/homeDirFiles/.colors/.Xres-dracula > ~/.Xres-theme && xrdb -load ~/.Xresources )
+[ -f $HOME/.Xres-theme ] && xrdb -load $HOME/.Xresources || \
+	( cat $HOME/.files/homeDirFiles/.colors/.Xres-dracula > $HOME/.Xres-theme && xrdb -load $HOME/.Xresources )
 
 # GPG Agent Stuff
 if [ -x /usr/bin/gpg-agent ]; then
@@ -40,6 +40,6 @@ if [ -x /usr/bin/gpg-agent ]; then
 fi
 
 ## Start the WM
-# This gets passed from startx in ~/.profile. Setting it up this way allows me to select from a list of WMs
+# This gets passed from startx in $HOME/.profile. Setting it up this way allows me to select from a list of WMs
 #exec $1
 exec i3
