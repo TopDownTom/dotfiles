@@ -161,8 +161,8 @@ $b $mod+apostrophe exec i3-input -F 'mark %s' -l 4 -P 'Mark: '
 $b $mod+g exec i3-input -F '[con_mark="%s"] focus' -l 4 -P 'Goto: '
 
 ########## Multimedia ##########
-$b XF86MonBrightnessUp exec $sh $HOME/docs/scripts/brightControl up
-$b XF86MonBrightnessDown exec $sh $HOME/docs/scripts/brightControl down
+$b XF86MonBrightnessUp exec $sh $SCRIPT_DIR/brightControl up
+$b XF86MonBrightnessDown exec $sh $SCRIPT_DIR/brightControl down
 
 $b XF86AudioRaiseVolume exec pamixer -i 5  && pkill -SIGRTMIN+2 i3blocks
 $b XF86AudioLowerVolume exec pamixer -d 5 && pkill -SIGRTMIN+2 i3blocks
@@ -175,21 +175,21 @@ $b $mod+Shift+backslash exec pamixer -t && pkill -SIGRTMIN+2 i3blocks
 ### cmus-remote ###
 $b XF86AudioPrev exec cmus-remote --prev && pkill -SIGRTMIN+1 i3blocks
 $b XF86AudioNext exec cmus-remote --next && pkill -SIGRTMIN+1 i3blocks
-$b XF86AudioPlay exec $sh $HOME/docs/scripts/launchCmus && pkill -SIGRTMIN+1 i3blocks
+$b XF86AudioPlay exec $sh $SCRIPT_DIR/launchCmus && pkill -SIGRTMIN+1 i3blocks
 # To stay on keyboard + right hand control
 $b $mod+p exec /home/tom/docs/scripts/launchCmus && pkill -SIGRTMIN+1 i3blocks
 $b $mod+Shift+bracketright exec cmus-remote --next && pkill -SIGRTMIN+1 i3blocks
 $b $mod+Shift+bracketleft exec cmus-remote --prev && pkill -SIGRTMIN+1 i3blocks
 
 ########## User-Defined Keybinds ##########
-$b $mod+F2 exec $HOME/docs/scripts/timer
-$b $mod+F3 exec $HOME/docs/scripts/pomoTimer
-$b $mod+F7 exec $HOME/docs/scripts/display
+$b $mod+F2 exec $SCRIPT_DIR/timer
+$b $mod+F3 exec $SCRIPT_DIR/pomoTimer
+$b $mod+F7 exec $SCRIPT_DIR/display
 $b $mod+f [instance="floatingShell"] scratchpad show
 $b $mod+Shift+f exec pcmanfm
 $b $mod+n [instance="math"] scratchpad show
 $b $mod+m [instance="cmus"] scratchpad show
-$b $mod+Shift+p exec $sh $HOME/docs/scripts/screenShot
+$b $mod+Shift+p exec $sh $SCRIPT_DIR/screenShot
 $b $mod+v exec mpvhd
 $b $mod+w exec --no-startup-id firefox --profile $HOME/.mozilla/firefox/managed --private-window file:///$HOME/.mozilla/firefox/managed/startpage.html
 $b $mod+Shift+w exec chromium
@@ -220,7 +220,7 @@ bar {
 		urgent_workspace   #2f343a #900000 #ffffff
 	}
 	tray_output none
-	font xft:Anonymice Nerd Font 14
+	font xft:Anonymice Nerd Font 15
 	position top
-	status_command i3blocks -c ~/.config/i3/i3blocks.conf
+	status_command i3blocks -c $HOME/.config/i3/i3blocks.conf
 }
