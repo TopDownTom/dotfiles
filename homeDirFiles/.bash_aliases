@@ -1,6 +1,7 @@
 a="alias"
 
 # General aliases
+$a cd='function _cdfetch(){ cd $1; [[ -d $PWD/.git ]] && git fetch; };_cdfetch'
 $a rm='rm -I'
 $a ll='ls -alF'
 $a la='ls -A'
