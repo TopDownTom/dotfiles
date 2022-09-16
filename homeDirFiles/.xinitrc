@@ -39,6 +39,9 @@ if [ -x /usr/bin/gpg-agent ]; then
  eval "$(/usr/bin/gpg-agent --daemon)"
 fi
 
+# systemd user units
+systemctl --user start reload-i3.path
+
 ## Start the WM
 # This gets passed from startx in $HOME/.profile. Setting it up this way allows me to select from a list of WMs
 #exec $1
