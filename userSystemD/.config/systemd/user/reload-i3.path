@@ -3,6 +3,3 @@ Description=watch for i3 config changes
 
 [Path]
 PathModified=%h/.files/i3/.config/i3/config
-
-[Install]
-WantedBy=graphical-user.target
