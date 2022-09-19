@@ -70,6 +70,7 @@ perl-module-build
 perl-sub-exporter
 perl-test-exception
 picom
+pkgconf
 protonvpn-cli
 pulseaudio
 python-matplotlib
