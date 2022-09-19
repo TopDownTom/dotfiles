@@ -75,6 +75,7 @@ pulseaudio
 python-matplotlib
 python-pip
 ranger
+read-edid
 redshift
 rsync
 rust
