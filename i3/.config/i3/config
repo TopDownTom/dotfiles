@@ -206,7 +206,7 @@ $b $mod+Down exec xdotool click 2 # middle click
 $b $mod+Right exec xdotool click 3 # r click
 
 ########## System Related ##########
-$b $mod+Shift+equal exec --no-startup-id i3lock -i $HOME/.bsod.png
+$b $mod+Shift+equal exec --no-startup-id i3lock -u -i $HOME/.bsod.png
 
 ########## i3bar ##########
 bar {
