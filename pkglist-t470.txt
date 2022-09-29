@@ -60,7 +60,7 @@ pamixer
 paprefs
 pass
 pass-otp
-pavucontrol
+pavucontrol-qt
 pcmanfm
 perl
 perl-anyevent
