@@ -5,6 +5,7 @@ android-tools
 ansible
 ansible-lint
 arandr
+arp-scan
 base
 bash-completion
 bc
