@@ -1,4 +1,4 @@
-static char *font = "Anonymice Nerd Font:pixelsize=25:antialias=true:autohint=true";
+static char *font = "Anonymice Nerd Font:pixelsize=20:antialias=true:autohint=true";
 static int borderpx = 2;
 
 static char *shell = "/bin/sh";
