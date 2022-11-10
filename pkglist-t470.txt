@@ -34,6 +34,7 @@ iwd
 jq
 keepass
 krita
+latex-enumitem
 libnotify
 libreoffice-fresh
 linux
