@@ -9,9 +9,6 @@ xwallpaper --stretch $HOME/.pape.png
 # Start Rxvt-unicode daemon
 urxvtd &
 
-# start redshift
-redshift &
-
 # start networkmanager applet
 nm-applet &
 
