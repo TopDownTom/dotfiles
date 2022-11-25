@@ -15,6 +15,7 @@ dialog
 dictd
 discord
 dmenu
+docker
 dog
 dunst
 fatsort
