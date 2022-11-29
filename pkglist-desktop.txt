@@ -45,6 +45,7 @@ imagemagick
 jq
 keepass
 krita
+latex-enumitem
 lf-bin
 libreoffice-fresh
 libtool
