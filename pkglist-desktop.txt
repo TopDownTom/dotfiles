@@ -4,6 +4,7 @@ amd-ucode
 amdvlk
 android-tools
 ansible
+arp-scan
 autoconf
 automake
 base
