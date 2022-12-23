@@ -9,7 +9,7 @@
     --tab-fonts: "Ubuntu Mono";
     --tab-font-size: 10pt;
     --tab-text-align: center;
-    --tab-min-height: 20px !important;
+    --tab-min-height: 10px !important;
     --page-border-surround: #e89609;
     --tab-selected-border: #e89609;
     --tab-selected-text-color: #e89609;
@@ -76,18 +76,18 @@ tab, .tabbrowser-tabs *|tab {
 }
 
 /**** Center tab text as of FFv89 ****/
-.tab-label-container{ -moz-box-pack: center; -moz-box-orient: horizontal }
+.tab-label-container{ -moz-box-pack: center;}
 
 /**** TAB LABEL ****/
 .tab-label {
-    -moz-box-flex: 1 !important;
     text-align: var(--tab-text-align) !important;
 }
 
 /**** TAB WIDTH ****/
 .tabbrowser-tab[fadein]:not([pinned]) {
-    min-width: 15vw !important;
-    max-width:  200px !important;
+    min-width: 12vw;
+    max-width:  18vw;
+    max-height: 26px;
 }
 
 /**** TAB SELECTED ****/
@@ -111,7 +111,7 @@ tab, .tabbrowser-tabs *|tab {
     background: black !important;
     list-style-image: none !important;
     margin: 0 0 0 0  !important;
-    padding: 2 2 2 2 !important;
+    padding: 5 0 0 0 !important;
     -moz-appearance: none !important;
 }
 
@@ -159,12 +159,12 @@ tab, .tabbrowser-tabs *|tab {
 
 :root:not([customizing]) #TabsToolbar {
   margin-bottom: 0vw !important;
-  margin-top: 38px;
+  margin-top: 27px;
   margin-left: 0vw !important;
   margin-right: 0vw !important;
   max-height: 0px !important;
   position: fixed; top: 0;
-  z-index:1;
+  z-index: 1;
   width: 100vw;
 }
 
@@ -192,6 +192,6 @@ tab, .tabbrowser-tabs *|tab {
     margin-top: -41px;
 }
 
-#navigator-toolbox:hover, #navigator-toolbox:focus-within {
+#navigator-toolbox:focus-within {
     margin-top: 0px;
 }
