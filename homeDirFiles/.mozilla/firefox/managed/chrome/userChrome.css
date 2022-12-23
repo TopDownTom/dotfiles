@@ -9,11 +9,11 @@
     --tab-fonts: "Ubuntu Mono";
     --tab-font-size: 10pt;
     --tab-text-align: center;
-    --tab-min-height: 40px !important;
+    --tab-min-height: 20px !important;
     --page-border-surround: #e89609;
     --tab-selected-border: #e89609;
     --tab-selected-text-color: #e89609;
- 
+
 /**********************************/
 /**** URL BAR VARIABLES *******/
 /*********************************/
@@ -21,19 +21,19 @@
     --url-foreground: var(--fg-light);
     --url-fonts: "Ubuntu Mono";
     --url-font-size: 16pt;
-    --url-text-align: left;
+    --url-text-align: center;
 }
- 
+
 /*********************************/
 /**** General Browser Config****/
 /*********************************/
 
 /*Window borders for content area*/
-#browser { 
+#browser {
  border-left:0px solid var(--page-border-surround) !important;
  border-right:0px solid var(--page-border-surround) !important;
  border-bottom: 0px solid var(--page-border-surround) !important;
- border-top:  1px solid var(--page-border-surround) !important;
+ border-top:  0px solid var(--page-border-surround) !important;
  margin-right: -16px;
 }
 
@@ -52,7 +52,7 @@
 	display: none;
 }
 
-#home-button, ##PanelUI-menu-button, #downloads-button, #bookmarks-button { 
+#home-button, ##PanelUI-menu-button, #downloads-button, #bookmarks-button {
     display: none !important;
 }
 
@@ -62,7 +62,7 @@
 #navigator-toolbox, #main-window[sizemode="normal"] #navigator-toolbox, #main-window[sizemode="maximized"] #navigator-toolbox {
     box-shadow: none !important;
 }
-  
+
 /*********************************/
 /**** TAB BAR CONFIG ****/
 /*********************************/
@@ -77,13 +77,13 @@ tab, .tabbrowser-tabs *|tab {
 
 /**** Center tab text as of FFv89 ****/
 .tab-label-container{ -moz-box-pack: center; -moz-box-orient: horizontal }
- 
+
 /**** TAB LABEL ****/
 .tab-label {
     -moz-box-flex: 1 !important;
     text-align: var(--tab-text-align) !important;
 }
- 
+
 /**** TAB WIDTH ****/
 .tabbrowser-tab[fadein]:not([pinned]) {
     min-width: 15vw !important;
@@ -94,13 +94,12 @@ tab, .tabbrowser-tabs *|tab {
 .tab-background-middle[selected="true"], .tabbrowser-tab[selected="true"], .tabbrowser-tab[selected="true"]:hover {
     background: var(--bg-dark) !important;
     color: var(--tab-selected-text-color) !important;
-    border-right: 0px !important;
     border-left: 1px solid var(--tab-selected-border) !important;
     border-right: 1px solid var(--tab-selected-border) !important;
-    border-top: 0px solid var(--tab-selected-border) !important;
-    border-bottom: none !important;
+    border-top: 1px solid var(--tab-selected-border) !important;
+    border-bottom: 1px solid var(--tab-selected-border) !important;
 }
- 
+
 /**** TAB HOVER****/
 .tabbrowser-tab[selected="true"][pinned="true"]:hover, .tabbrowser-tab:not([pinned]):hover, .tabs-newtab-button:hover {
     background: var(--bg-light) !important;
@@ -115,7 +114,7 @@ tab, .tabbrowser-tabs *|tab {
     padding: 2 2 2 2 !important;
     -moz-appearance: none !important;
 }
- 
+
 /**** TAB SEPARATOR****/
 #TabsToolbar .tab-background {
     background: black !important;
@@ -140,13 +139,13 @@ tab, .tabbrowser-tabs *|tab {
     font-family: var(--url-fonts) !important;
     font-size: var(--url-font-size);
     text-shadow: none !important;
-    text-align: left !important;
+    text-align: center !important;
     border: none !important;
-    box-shadow: none !important;    
+    box-shadow: none !important;
 }
 
 :root[privatebrowsingmode="temporary"] {
-  
+
 }
 
 #nav-bar[id], #PersonalToolbar[id], #web-developer-toolbar[id], #navigator-toolbox[tabsontop="false"] > #nav-bar[id], #navigator-toolbox[tabsontop="true"]:not([customizing]) > #nav-bar[collapsed="true"][id] + toolbar, #navigator-toolbox[tabsontop="true"]:not([customizing]) > #nav-bar[collapsed="true"] + #customToolbars + #PersonalToolbar[id], #navigator-toolbox[tabsontop="false"] > #nav-bar[id], #navigator-toolbox[tabsontop="false"]:not([customizing]) > #nav-bar[collapsed="true"][id] + toolbar, #navigator-toolbox[tabsontop="false"]:not([customizing]) > #nav-bar[collapsed="true"] + #customToolbars + #PersonalToolbar[id] {
@@ -157,10 +156,10 @@ tab, .tabbrowser-tabs *|tab {
     border-top: 0px !important;
     border-bottom: none !important;
 }
- 
+
 :root:not([customizing]) #TabsToolbar {
-  margin-bottom: 0vw !important;                
-  margin-top: 0vw !important;                   
+  margin-bottom: 0vw !important;
+  margin-top: 38px;
   margin-left: 0vw !important;
   margin-right: 0vw !important;
   max-height: 0px !important;
@@ -169,17 +168,17 @@ tab, .tabbrowser-tabs *|tab {
   width: 100vw;
 }
 
-:root:not([customizing]) #nav-bar {   
+:root:not([customizing]) #nav-bar {
   position: fixed; top: 0;
   z-index: 0;
-  margin-bottom: 0vw !important;                
-  margin-top: 0vw !important;                   
+  margin-bottom: 0vw !important;
+  margin-top: 0vw !important;
   margin-left: 0vw !important;
   margin-right: 0vw !important;
   --lwt-toolbar-field-background-color: black !important;
 }
 
-:root:not([customizing]) #nav-bar:focus-within { 
+:root:not([customizing]) #nav-bar:focus-within {
     z-index: 1000;
     visibility: visible !important;
 }
@@ -189,3 +188,10 @@ tab, .tabbrowser-tabs *|tab {
     display: none !important;
 }
 
+#navigator-toolbox {
+    margin-top: -41px;
+}
+
+#navigator-toolbox:hover, #navigator-toolbox:focus-within {
+    margin-top: 0px;
+}
