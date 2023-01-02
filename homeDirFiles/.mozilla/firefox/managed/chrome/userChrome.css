@@ -165,7 +165,7 @@ tab, .tabbrowser-tabs *|tab {
   max-height: 0px !important;
   position: fixed; top: 0;
   z-index: 1;
-  width: 100vw;
+  width: 110vw;
 }
 
 :root:not([customizing]) #nav-bar {
