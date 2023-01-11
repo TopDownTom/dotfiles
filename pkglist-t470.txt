@@ -9,6 +9,8 @@ arp-scan
 base
 bash-completion
 bc
+bluez
+bluez-utils
 cmus
 dhcpcd
 dialog
@@ -76,6 +78,7 @@ picom
 pkgconf
 protonvpn-cli
 pulseaudio
+pulseaudio-bluetooth
 python-matplotlib
 python-pip
 ranger
