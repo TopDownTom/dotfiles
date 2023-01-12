@@ -38,7 +38,7 @@ grep
 groff
 grub
 gzip
-i3-gaps
+i3-wm
 i3blocks
 i3lock
 i3status
