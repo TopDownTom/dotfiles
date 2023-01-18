@@ -41,6 +41,7 @@ set nocindent
 set nosmartindent
 set noautoindent
 set indentexpr=
+set mouse=
 filetype indent off
 filetype plugin indent off
 
