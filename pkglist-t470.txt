@@ -76,6 +76,7 @@ perl-sub-exporter
 perl-test-exception
 picom
 pkgconf
+powertop
 protonvpn-cli
 pulseaudio
 pulseaudio-bluetooth
