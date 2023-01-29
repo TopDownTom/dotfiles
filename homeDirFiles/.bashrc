@@ -26,17 +26,16 @@ shopt -s checkwinsize
 
 # Display the git branch at the git root directory
 function gitBranch {
-  [ -d .git ] && git branch | awk '/\*/{print $2}'
+  findGitBranches; [[ $? -eq 3 ]] && git branch | awk '/\*/{print $2}'
 }
 function gitTag {
-	[ -d .git ] && git describe 2> /dev/null;
-  [ $? -eq 128 ] && echo "x.x"
+  findGitBranches; [[ $? -eq 3 ]] && git describe 2> /dev/null && [ $? -eq 128 ] && echo "x.x"
 }
 function gitPorcelain {
-  [ -d .git ] &&  git status --porcelain | awk '{print $1}' | uniq -c | tr -d '\n' | sed -r 's/[[:blank:]]+//g; s/([[:digit:]])([[:alpha:]])/\1\2 /g'
+  findGitBranches; [[ $? -eq 3 ]] && git status --porcelain | awk '{print $1}' | uniq -c | tr -d '\n' | sed -r 's/[[:blank:]]+//g; s/([[:digit:]])([[:alpha:]])/\1\2 /g'
 }
 function gitAheadBehind {
-  [ -d .git ] && git status -b --short | awk '/##/{print $3" "$4}'
+  findGitBranches; [[ $? -eq 3 ]] && git status -b --short | awk '/##/{print $3" "$4}'
 }
 
 # Set PS1 variable
