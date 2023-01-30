@@ -4,7 +4,21 @@ case $- in
       *) return;;
 esac
 
-### Bash History ###
+### user files ###
+# bash functions
+if [ -f $HOME/.bash_functions ]; then
+    . $HOME/.bash_functions
+fi
+# aliases
+if [ -f $HOME/.bash_aliases ]; then
+    . $HOME/.bash_aliases
+fi
+# enable color support of ls
+if [ -x /usr/bin/dircolors ]; then
+    test -r $HOME/.dir_colors && eval "$(dircolors -b $HOME/.dir_colors)" || eval "$(dircolors -b)"
+fi
+
+### bash history ###
 # append to the history file, don't overwrite it
 shopt -s histappend
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
@@ -13,41 +27,17 @@ HISTFILESIZE=2000
 HISTTIMEFORMAT="%Y %m%d %T "
 # don't put duplicate lines or lines starting with space in the history.
 HISTCONTROL=ignoreboth
+
+### bashisms ###
 # Reset window text on window resize
 shopt -s checkwinsize
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
-### BASH PROMPT ###
-
-# Colors #
+### prompt ###
+# colors #
 #RED='\e[1;31m' #GREEN='\e[1;32m' #YELLOW='\e[1;33m'
 #BLUE='\e[1;34m' #PURPLE='\e[1;35m' #NOCOL='\e[0m'
-
-# Display the git branch at the git root directory
-function gitBranch {
-  findGitBranches; [[ $? -eq 3 ]] && git branch | awk '/\*/{print $2}'
-}
-function gitTag {
-  findGitBranches; [[ $? -eq 3 ]] && git describe 2> /dev/null && [ $? -eq 128 ] && echo "x.x"
-}
-function gitPorcelain {
-  findGitBranches; [[ $? -eq 3 ]] && git status --porcelain | awk '{print $1}' | uniq -c | tr -d '\n' | sed -r 's/[[:blank:]]+//g; s/([[:digit:]])([[:alpha:]])/\1\2 /g'
-}
-function gitAheadBehind {
-  findGitBranches; [[ $? -eq 3 ]] && git status -b --short | awk '/##/{print $3" "$4}'
-}
-
-# Set PS1 variable
+# PS1 variable
 PS1='\033[1;34m\w\033[00m \e[1;32m$(gitBranch) \e[0;32m$(gitTag) \e[0;31m$(gitPorcelain) \e[0;33m$(gitAheadBehind)\e[0m \e[0m\n\$ '
-#PS1='\033[01;34m\w\033[00m \e[1;32m \e[0m\n\$ '
-
-# enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-    test -r $HOME/.dir_colors && eval "$(dircolors -b $HOME/.dir_colors)" || eval "$(dircolors -b)"
-fi
-
-# Alias definitions.
-if [ -f $HOME/.bash_aliases ]; then
-    . $HOME/.bash_aliases
-fi
+#PS1='\033[01;34m\w\033[00m \e[1;32m \e[0m\n\$ ' # the default prompt
