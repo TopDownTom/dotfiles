@@ -38,6 +38,7 @@ shopt -s checkwinsize
 # colors #
 #RED='\e[1;31m' #GREEN='\e[1;32m' #YELLOW='\e[1;33m'
 #BLUE='\e[1;34m' #PURPLE='\e[1;35m' #NOCOL='\e[0m'
+
 # PS1 variable
-PS1='\033[1;34m\w\033[00m \e[1;32m$(gitBranch) \e[0;32m$(gitTag) \e[0;31m$(gitPorcelain) \e[0;33m$(gitAheadBehind)\e[0m \e[0m\n\$ '
+PS1='\033[1;34m\w\033[00m $(gitDirInfo) \e[0m\n\$ '
 #PS1='\033[01;34m\w\033[00m \e[1;32m \e[0m\n\$ ' # the default prompt
