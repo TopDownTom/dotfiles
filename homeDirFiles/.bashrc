@@ -40,5 +40,6 @@ shopt -s checkwinsize
 #BLUE='\e[1;34m' #PURPLE='\e[1;35m' #NOCOL='\e[0m'
 
 # PS1 variable
-PS1='\033[1;34m\w\033[00m $(gitDirInfo) \e[0m\n\$ '
+# see ~/.bash_functions for info on the called functions
+PS1='$(checkSSHSess)\033[1;34m\w\033[00m $(gitDirInfo) \e[0m\n\$ '
 #PS1='\033[01;34m\w\033[00m \e[1;32m \e[0m\n\$ ' # the default prompt
