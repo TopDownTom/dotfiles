@@ -1,5 +1,8 @@
 a="alias"
 
+# ensure .profile is sourced for variables
+[ -f $HOME/.profile ] && . $HOME/.profile
+
 # General aliases
 $a cd='function _cdfetch(){ cd "${1:-$HOME}"; [[ $? -eq 0 ]] && gitFetchTimer; };_cdfetch'
 $a rm='rm -I'
@@ -31,7 +34,7 @@ $a i3lockb='i3lock -c 000000'
 $a n='function _title(){ rxvt -e $1 & disown; };_title' # gives windows titles (not useful w/o window titles displayed)
 $a net='$SCRIPT_DIR/net'
 $a notif='notify-send done && watch -n1 "#hi im done"'
-$a polyReload='/bin/bash $HOME/.files/polybar/.config/polybar/launch'
+$a polyReload='/bin/bash $USER_CONFIG_DIR/polybar/.config/polybar/launch'
 $a py3='`which python3`'
 $a pyGen='pythonScriptGen'
 $a scr='$SCRIPT_DIR/scriptGen'
@@ -41,21 +44,21 @@ $a sxiv='sxiv -ap'
 $a xrdbload='xrdb load $HOME/.Xresources'
 
 # Opening config files
-$a vi3='vi $HOME/.files/i3/.config/i3/config'
-$a vi3b='vi $HOME/.files/i3/.config/i3/i3blocks.conf'
-$a vib='vi $HOME/.files/homeDirFiles/.bashrc'
-$a viba='vi $HOME/.files/homeDirFiles/.bash_aliases'
-$a vimrc='vi $HOME/.files/vim/.config/vim/vimrc'
-$a vip='vi $HOME/.files/homeDirFiles/.profile'
-$a vipoly='vi $HOME/.files/polybar/.config/polybar/config'
-$a vis='vi $HOME/.files/st/.config/st/config.h'
-$a vix='vi $HOME/.files/homeDirFiles/.xinitrc'
+$a vi3='vi $USER_CONFIG_DIR/i3/.config/i3/config'
+$a vi3b='vi $USER_CONFIG_DIR/i3/.config/i3/i3blocks.conf'
+$a vib='vi $USER_CONFIG_DIR/homeDirFiles/.bashrc'
+$a viba='vi $USER_CONFIG_DIR/homeDirFiles/.bash_aliases'
+$a vimrc='vi $USER_CONFIG_DIR/vim/.config/vim/vimrc'
+$a vip='vi $USER_CONFIG_DIR/homeDirFiles/.profile'
+$a vipoly='vi $USER_CONFIG_DIR/polybar/.config/polybar/config'
+$a vis='vi $USER_CONFIG_DIR/st/.config/st/config.h'
+$a vix='vi $USER_CONFIG_DIR/homeDirFiles/.xinitrc'
 
 # Aliases related to directories
 $a gM='cd /run/media/`whoami`'
 $a gc='cd $HOME/.config'
 $a gd='cd $HOME/docs'
-$a gf='cd $HOME/.files'
+$a gf='cd $USER_CONFIG_DIR'
 $a gm='cd $HOME/music'
 $a gp='cd $HOME/pix'
 $a gs='cd $SCRIPT_DIR'

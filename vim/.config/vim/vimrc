@@ -8,7 +8,7 @@ if has("syntax")
 endif
 
 " Source my functions-file
-source /home/tom/.files/vim/.config/vim/vimFunctions
+source /usr/local/etc/user_configs/vim/.config/vim/vimFunctions
 
 " Set sane defaults
 set number

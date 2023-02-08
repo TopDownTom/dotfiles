@@ -7,4 +7,4 @@ Target = *
 [Action]
 Description = Update the currently installed package list
 When = PostTransaction
-Exec = /usr/bin/sudo -u tom /bin/sh -c '/usr/bin/pacman -Qqe > $HOME/.files/pkglist-`/usr/bin/hostnamectl hostname`.txt'
+Exec = /usr/bin/sudo -u root /bin/sh -c '/usr/bin/pacman -Qqe > /usr/local/etc/user_configs/pkglist-`/usr/bin/hostnamectl hostname`.txt'

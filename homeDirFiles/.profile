@@ -20,7 +20,8 @@ export PDFVIEWER="zathura"
 export DIFFPROG="vi"
 export USER_FONT='Anonymice Nerd Font'
 export TEXMFHOME="$HOME/.config/texmf/"
-export SCRIPT_DIR="$HOME/docs/scripts"
+export SCRIPT_DIR="/usr/local/etc/scripts"
+export USER_CONFIG_DIR="/usr/local/etc/user_configs"
 
 # Start X-Org on login
 if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then

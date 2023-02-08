@@ -29,7 +29,7 @@ xinput disable "SynPS/2 Synaptics TouchPad"
 
 # Load .Xresources or set a default theme if none present
 [ -f $HOME/.Xres-theme ] && xrdb -load $HOME/.Xresources || \
-	( cat $HOME/.files/homeDirFiles/.colors/.Xres-dracula > $HOME/.Xres-theme && xrdb -load $HOME/.Xresources )
+	( cat $USER_CONFIG_DIR/homeDirFiles/.colors/.Xres-dracula > $HOME/.Xres-theme && xrdb -load $HOME/.Xresources )
 
 # GPG Agent Stuff
 if [ -x /usr/bin/gpg-agent ]; then
