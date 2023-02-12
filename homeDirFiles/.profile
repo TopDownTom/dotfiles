@@ -6,10 +6,6 @@ fi
 export SSH_AUTH_SOCK=$HOME/.ssh/ssh_auth_sock
 ssh-add -l > /dev/null || ssh-add
 
-# Update PATH to include user shell scripts
-PATH="$PATH:$HOME/docs/scripts:$HOME/.local/bin"
-export PATH
-
 # System variables
 export XDG_CONFIG_HOME="$HOME/.config/"
 export EDITOR="nvim"
