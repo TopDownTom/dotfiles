@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = Update the currently installed NATIVE package list
+When = PostTransaction
+Exec = /usr/bin/sudo -u root /bin/sh -c '/usr/bin/pacman -Qqen > /usr/local/etc/user_configs/native-pkglist-`/usr/bin/hostnamectl hostname`.txt'

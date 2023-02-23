@@ -1,0 +1,6 @@
+latex-enumitem
+perl-linux-fd
+protonvpn-cli
+task-spooler
+tunerstudio
+yay-bin

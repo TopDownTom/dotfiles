@@ -37,7 +37,6 @@ iwd
 jq
 keepass
 krita
-latex-enumitem
 libnotify
 libreoffice-fresh
 linux
@@ -48,8 +47,6 @@ linux-lts-headers
 lshw
 make
 man-db
-mencoder
-mplayer
 mpv
 mtpfs
 neovim
@@ -72,14 +69,12 @@ perl
 perl-anyevent
 perl-anyevent-i3
 perl-common-sense
-perl-linux-fd
 perl-module-build
 perl-sub-exporter
 perl-test-exception
 picom
 pkgconf
 powertop
-protonvpn-cli
 pulseaudio
 pulseaudio-bluetooth
 python-matplotlib
@@ -98,13 +93,11 @@ stow
 sudo
 sxiv
 systemd-resolvconf
-task-spooler
 texmaker
 tlp
 tmux
 traceroute
 transmission-qt
-tunerstudio
 udisks2
 unzip
 veracrypt
@@ -125,7 +118,6 @@ xorg-xinit
 xorg-xinput
 xorg-xrandr
 xwallpaper
-yay-bin
 youtube-dl
 zathura
 zathura-pdf-poppler
