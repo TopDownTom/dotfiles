@@ -78,6 +78,7 @@ powertop
 pulseaudio
 pulseaudio-bluetooth
 python-matplotlib
+python-passlib
 python-pip
 ranger
 read-edid
