@@ -1,0 +1,7 @@
+[Unit]
+Description=trackpoint
+
+[Service]
+ExecStart=/usr/local/etc/scripts/trackpointSensitivity
+Restart=no
+RemainAfterExit=yes
