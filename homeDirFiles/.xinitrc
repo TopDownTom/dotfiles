@@ -17,7 +17,7 @@ nm-applet &
 # Set X refresh rate, helps increase scroll speed
 xset r rate 300 50
 # Switch capslock and escape key
-#setxkbmap -option caps:swapescape
+setxkbmap -option caps:swapescape
 # External monitor settings, disables power-saving modes which otherwise sleeps the computer
 xset s off
 xset -dpms
