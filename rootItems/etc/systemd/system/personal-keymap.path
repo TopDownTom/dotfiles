@@ -1,8 +1,0 @@
-[Unit]
-Description=keymap
-
-[Path]
-PathExists=/usr/local/etc/user_configs/keymaps/usr/share/kbd/keymaps/personal.map
-
-[Install]
-WantedBy=default.target

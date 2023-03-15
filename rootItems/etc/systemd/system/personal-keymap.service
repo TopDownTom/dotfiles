@@ -1,7 +1,0 @@
-[Unit]
-Description=keymap
-
-[Service]
-ExecStart=/usr/bin/loadkeys /usr/local/etc/user_configs/keymaps/usr/share/kbd/keymaps/personal.map
-Restart=no
-RemainAfterExit=yes
