@@ -200,8 +200,6 @@
     <item label="Conky RC"><action name="Execute"><command><![CDATA[xed $HOME/.conkyrcOB]]></command></action></item>
 
   <menu id="Firefox" label="Firefox">
-    <item label="Firefox Css"><action name="Execute"><command><![CDATA[xed /home/tom/.mozilla/firefox/i379hm42.default/chrome/userChrome.css]]></command></action></item>
-    <item label="Firefox Homepage"><action name="Execute"><command><![CDATA[xed /home/tom/Documents/"Firefox Holding Station"/Startpage.html]]></command></action></item>
   </menu>
 
   <menu id="Mutt" label="Mutt">
