@@ -84,6 +84,7 @@ python-pip
 ranger
 read-edid
 redshift
+reflector
 rsync
 rust
 rxvt-unicode
