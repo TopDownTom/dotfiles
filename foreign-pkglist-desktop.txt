@@ -1,0 +1,13 @@
+epson-inkjet-printer-201303w
+latex-enumitem
+lf-bin
+masterpdfeditor-free
+megalogviewer
+perl-linux-fd
+protonvpn-cli
+python-pyautogui
+python-sklearn-pandas
+simple-mtpfs
+task-spooler
+tunerstudio
+yay-bin
