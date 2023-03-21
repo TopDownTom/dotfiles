@@ -4,6 +4,7 @@ amd-ucode
 amdvlk
 android-tools
 ansible
+archiso
 arp-scan
 autoconf
 automake
@@ -91,6 +92,7 @@ python-passlib
 python-pip
 python-scipy
 redshift
+reflector
 rsync
 rxvt-unicode
 scrot
