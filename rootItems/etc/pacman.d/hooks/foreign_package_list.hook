@@ -7,4 +7,4 @@ Target = *
 [Action]
 Description = Update the currently installed FOREIGN package list
 When = PostTransaction
-Exec = /usr/bin/sudo -u root /bin/sh -c '/usr/bin/pacman -Qqem > /usr/local/etc/user_configs/foreign-pkglist-`/usr/bin/hostnamectl hostname`.txt'
+Exec = /usr/bin/sudo -u root /bin/sh -c '/usr/bin/pacman -Qqem > /usr/local/etc/user_configs/pkglists/foreign-pkglist-`/usr/bin/hostnamectl hostname`.txt'
