@@ -1,5 +1,4 @@
 acpi
-aiksaurus
 alsa-utils
 android-tools
 ansible
@@ -28,7 +27,6 @@ gimp
 git
 go
 grub
-hexchat
 i3-wm
 i3blocks
 i3lock
@@ -59,13 +57,11 @@ newsboat
 nmap
 openssh
 openvpn
-os-prober
 pacman-contrib
 pamixer
 paprefs
 pass
 pass-otp
-pavucontrol-qt
 pcmanfm
 perl
 perl-anyevent
@@ -74,7 +70,6 @@ perl-common-sense
 perl-module-build
 perl-sub-exporter
 perl-test-exception
-picom
 pkgconf
 powertop
 pulseaudio
@@ -82,9 +77,7 @@ pulseaudio-bluetooth
 python-matplotlib
 python-passlib
 python-pip
-ranger
 read-edid
-redshift
 reflector
 rsync
 rust
@@ -107,8 +100,6 @@ unzip
 veracrypt
 virtualbox
 virtualbox-host-dkms
-w3m
-weechat
 wget
 which
 whois
