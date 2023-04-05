@@ -10,4 +10,5 @@ python-sklearn-pandas
 simple-mtpfs
 task-spooler
 tunerstudio
+vobcopy
 yay-bin
