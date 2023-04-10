@@ -55,6 +55,7 @@ network-manager-applet
 networkmanager
 newsboat
 nmap
+offroad
 openssh
 openvpn
 pacman-contrib
