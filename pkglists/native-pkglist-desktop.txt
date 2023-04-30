@@ -9,6 +9,7 @@ arp-scan
 autoconf
 automake
 base
+base-devel
 bash-completion
 bc
 binutils
