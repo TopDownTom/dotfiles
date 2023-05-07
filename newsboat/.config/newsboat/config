@@ -1,7 +1,7 @@
 # Set defaults
 auto-reload yes
 player mpv
-browser "/usr/bin/firefox --private-window %u"
+browser "firefox --profile $HOME/.mozilla/firefox/managed --private-window %u"
 
 # Keybinds
 unbind-key j
