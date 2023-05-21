@@ -35,7 +35,6 @@ iwd
 jq
 keepass
 kernel-modules-hook
-krita
 libnotify
 libreoffice-fresh
 linux
