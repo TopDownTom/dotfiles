@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = Check for pacman warnings after upgrade
+When = PostTransaction
+Exec = /usr/local/sbin/checkPacmanWarning
