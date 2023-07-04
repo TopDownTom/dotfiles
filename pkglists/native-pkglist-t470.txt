@@ -43,6 +43,7 @@ linux-headers
 linux-lts
 linux-lts-headers
 lshw
+lsof
 make
 man-db
 mpv
@@ -115,6 +116,7 @@ xorg-xinput
 xorg-xrandr
 xwallpaper
 youtube-dl
+yt-dlp
 zathura
 zathura-pdf-poppler
 zbar
