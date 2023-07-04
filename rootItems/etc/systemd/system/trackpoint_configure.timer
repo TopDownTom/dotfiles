@@ -1,0 +1,8 @@
+[Unit]
+Description=Run trackpoint configuation 20 seconds after boot
+
+[Timer]
+OnBootSec=40s
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,7 @@
+[Unit]
+Description=Set trackpoint attributes
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/local/sbin/trackpointConfigure
