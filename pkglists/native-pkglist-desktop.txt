@@ -92,6 +92,7 @@ python-pandas
 python-passlib
 python-pip
 python-scipy
+ranger
 redshift
 reflector
 rsync
@@ -107,6 +108,7 @@ sxiv
 system-config-printer
 tcpdump
 texinfo
+texlive-latex
 texmaker
 tmux
 torbrowser-launcher
@@ -119,6 +121,7 @@ veracrypt
 virtualbox
 virtualbox-host-dkms
 vlc
+w3m
 wget
 which
 whois
@@ -133,6 +136,7 @@ xorg-xrandr
 xorg-xsetroot
 xwallpaper
 youtube-dl
+yt-dlp
 zathura
 zathura-pdf-poppler
 zbar
