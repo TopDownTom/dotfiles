@@ -92,6 +92,7 @@ stow
 sudo
 sxiv
 systemd-resolvconf
+texlive-latex
 texmaker
 tlp
 tmux
