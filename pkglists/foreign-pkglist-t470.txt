@@ -1,6 +1,8 @@
 latex-enumitem
 perl-linux-fd
 protonvpn-cli
+python-proton-client
+python-protonvpn-nm-lib
 task-spooler
 tunerstudio
 yay-bin
