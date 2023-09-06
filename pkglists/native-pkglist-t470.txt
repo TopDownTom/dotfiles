@@ -4,6 +4,7 @@ android-tools
 ansible
 ansible-lint
 arandr
+archiso
 arp-scan
 base
 base-devel
@@ -116,7 +117,6 @@ xorg-xinit
 xorg-xinput
 xorg-xrandr
 xwallpaper
-youtube-dl
 yt-dlp
 zathura
 zathura-pdf-poppler
