@@ -135,7 +135,6 @@ xorg-xinit
 xorg-xrandr
 xorg-xsetroot
 xwallpaper
-youtube-dl
 yt-dlp
 zathura
 zathura-pdf-poppler
