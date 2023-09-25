@@ -16,7 +16,7 @@ bind-key k	up
 bind-key l	open
 bind-key U	show-urls
 
-macro m set browser "tsp mpv --ytdl --force-window %u"; open-in-browser ; set browser "/usr/bin/firefox %u"
+macro m set browser "tsp /usr/local/sbin/vidQueue %u"; open-in-browser
 
 # Colors
 highlight feedlist ".*(0/0))" black
