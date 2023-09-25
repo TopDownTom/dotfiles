@@ -19,6 +19,7 @@ $a ":q"='echo "This is not vim"'
 $a ..='cd ../'
 
 # Youtube-dl related
+$a yt='yt-dlp -f 22'
 $a ytd='$SCRIPT_DIR/youtubedl' # more general script than the two aliases
 $a ytpm='youtube-dl -f bestaudio' # downloads [m]usic playlists in .mp4 format with their native filenames
 $a ytpv='youtube-dl -f 137 -i -o "%(title)s.mp4-video"' # downloads [v]ideo playlists in .mp4 format with their native filenames
