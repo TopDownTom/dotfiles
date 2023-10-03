@@ -33,6 +33,7 @@ $a cmatrix='cmatrix -u 10 -s'
 $a grindCompare='py3 $HOME/docs/coffee/coffeegrindsize/App/dist/coffeegrindsize.app/Contents/Resources/coffeegrindsize.py & disown'
 $a i3lockb='i3lock -c 000000'
 $a n='function _title(){ rxvt -e $1 & disown; };_title' # gives windows titles (not useful w/o window titles displayed)
+$a mpv='devour mpv'
 $a net='$SCRIPT_DIR/net'
 $a notif='notify-send done && watch -n1 "#hi im done"'
 $a polyReload='/bin/bash $USER_CONFIG_DIR/polybar/.config/polybar/launch'
