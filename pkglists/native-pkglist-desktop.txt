@@ -87,13 +87,11 @@ picom
 pkgconf
 pulseaudio
 python-flask
-python-flit-core
 python-matplotlib
 python-pandas
 python-passlib
 python-pip
 python-scipy
-python-testpath
 ranger
 redshift
 reflector
