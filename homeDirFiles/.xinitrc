@@ -12,6 +12,9 @@ urxvtd &
 # start networkmanager applet
 nm-applet &
 
+# start pulseaudio daemon
+pulseaudio -k && pulseaudio -D
+
 ### X Settings
 
 # Set X refresh rate, helps increase scroll speed
