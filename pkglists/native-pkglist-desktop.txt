@@ -132,6 +132,7 @@ xdotool
 xorg-server
 xorg-xev
 xorg-xinit
+xorg-xinput
 xorg-xrandr
 xorg-xsetroot
 xwallpaper
