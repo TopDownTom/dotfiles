@@ -116,6 +116,7 @@ xorg-xev
 xorg-xinit
 xorg-xinput
 xorg-xrandr
+xournalpp
 xwallpaper
 yt-dlp
 zathura
