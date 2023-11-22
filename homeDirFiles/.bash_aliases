@@ -21,9 +21,9 @@ $a ..='cd ../'
 # Youtube-dl related
 $a yt='yt-dlp -f 22'
 $a ytd='$SCRIPT_DIR/youtubedl' # more general script than the two aliases
-$a ytpm='youtube-dl -f bestaudio' # downloads [m]usic playlists in .mp4 format with their native filenames
-$a ytpv='youtube-dl -f 137 -i -o "%(title)s.mp4-video"' # downloads [v]ideo playlists in .mp4 format with their native filenames
-$a ytpa='youtube-dl -f 140 -i -o "%(title)s.m4a"' # downloads [a]udio playlists in .m4a format with their native filenames
+$a ytpm='yt-dlp -f bestaudio --add-metadata' # downloads [m]usic playlists in .mp4 format with their native filenames
+$a ytpv='yt-dlp -f 137 -i -o "%(title)s.mp4-video"' # downloads [v]ideo playlists in .mp4 format with their native filenames
+$a ytpa='yt-dlp -f 140 -i -o "%(title)s.m4a"' # downloads [a]udio playlists in .m4a format with their native filenames
 
 # Command shorthand
 $a bc='bc -lq'
