@@ -80,6 +80,7 @@ pulseaudio-bluetooth
 python-matplotlib
 python-passlib
 python-pip
+python-virtualenv
 read-edid
 reflector
 rsync
