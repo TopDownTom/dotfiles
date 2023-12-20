@@ -47,6 +47,7 @@ lshw
 lsof
 make
 man-db
+mlocate
 mpv
 mtpfs
 neovim
