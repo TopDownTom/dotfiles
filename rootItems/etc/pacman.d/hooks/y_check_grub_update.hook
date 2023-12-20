@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = *
+
+[Action]
+Description = Check if grub was installed during upgrade
+When = PostTransaction
+Exec = /usr/local/sbin/checkGrubUpdate
