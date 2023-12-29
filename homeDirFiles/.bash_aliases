@@ -26,6 +26,7 @@ $a ytpv='yt-dlp -f 137 -i -o "%(title)s.mp4-video"' # downloads [v]ideo playlist
 $a ytpa='yt-dlp -f 140 -i -o "%(title)s.m4a"' # downloads [a]udio playlists in .m4a format with their native filenames
 
 # Command shorthand
+$a ap='ansible-playbook -i inventory'
 $a bc='bc -lq'
 $a beep='speaker-test -t sine -f 1000'
 $a copy='xclip -selection clipboard -i'
@@ -42,6 +43,7 @@ $a pyGen='pythonScriptGen'
 $a scr='$SCRIPT_DIR/scriptGen'
 $a setWallPape='xwallpaper --stretch $HOME/.pape.png'
 $a susp='systemctl suspend'
+$a src='source /usr/local/share/venvs/python3.8/bin/activate && ansible --version && sad'
 $a sxiv='sxiv -ap'
 $a xrdbload='xrdb load $HOME/.Xresources'
 
@@ -63,8 +65,9 @@ $a gd='cd $HOME/docs'
 $a gf='cd $USER_CONFIG_DIR'
 $a gm='cd $HOME/music'
 $a gp='cd $HOME/pix'
-$a gr='cd $HOME/repos'
+$a gr='cd $REPOS/'
 $a gs='cd $SCRIPT_DIR'
 $a gtor='cd $HOME/downloads/seeds'
 $a gv='cd $HOME/videos'
 $a gw='cd $HOME/pix/miscWG'
+$a sad='cd $REPOS/siteportal_ansible_deploy'

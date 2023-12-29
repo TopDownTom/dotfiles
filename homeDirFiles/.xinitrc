@@ -1,7 +1,6 @@
 #!/bin/sh
 
-# Compositor
-picom &
+vboxRes &
 
 # Set a background
 xwallpaper --stretch $HOME/.pape.png
@@ -13,7 +12,7 @@ urxvtd &
 nm-applet &
 
 # start pulseaudio daemon
-pulseaudio -k && pulseaudio -D
+#pulseaudio -k && pulseaudio -D
 
 ### X Settings
 
