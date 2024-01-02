@@ -1,0 +1,11 @@
+authy
+insomnia-bin
+latex-enumitem
+perl-linux-fd
+protonvpn-cli
+python-proton-client
+python-protonvpn-nm-lib
+python38
+task-spooler
+tunerstudio
+yay-bin
