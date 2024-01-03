@@ -1,0 +1,8 @@
+[Unit]
+Description=watch for script directory changes
+
+[Install]
+WantedBy=graphical.target
+
+[Path]
+PathModified=/usr/local/etc/scripts/.git/FETCH_HEAD
