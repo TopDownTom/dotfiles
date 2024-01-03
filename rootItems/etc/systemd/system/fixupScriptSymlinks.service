@@ -1,0 +1,10 @@
+[Unit]
+Description=Run fixBrokenSymlinks to ensure scripts remain available
+
+[Install]
+WantedBy=graphical.target
+
+[Service]
+Environment=DISPLAY=:0
+Type=oneshot
+ExecStart=/usr/bin/notify-send "running fix" && /usr/local/sbin/fixBrokenSymlinks -v
