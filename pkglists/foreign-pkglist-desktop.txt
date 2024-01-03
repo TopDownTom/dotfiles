@@ -1,4 +1,5 @@
 epson-inkjet-printer-201303w
+insomnia-bin
 latex-enumitem
 lf-bin
 masterpdfeditor-free
