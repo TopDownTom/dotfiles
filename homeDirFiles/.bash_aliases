@@ -26,6 +26,7 @@ $a ytpv='yt-dlp -f 137 -i -o "%(title)s.mp4-video"' # downloads [v]ideo playlist
 $a ytpa='yt-dlp -f 140 -i -o "%(title)s.m4a"' # downloads [a]udio playlists in .m4a format with their native filenames
 
 # Command shorthand
+$a ap='ansible-playbook -i inventory'
 $a bc='bc -lq'
 $a beep='speaker-test -t sine -f 1000'
 $a copy='xclip -selection clipboard -i'
