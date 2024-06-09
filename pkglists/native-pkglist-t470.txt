@@ -23,6 +23,7 @@ dog
 dunst
 fatsort
 firefox
+flameshot
 gcc
 gimp
 git
@@ -71,6 +72,7 @@ perl
 perl-anyevent
 perl-anyevent-i3
 perl-common-sense
+perl-image-exiftool
 perl-module-build
 perl-sub-exporter
 perl-test-exception
