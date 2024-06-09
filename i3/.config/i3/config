@@ -185,7 +185,7 @@ $b $mod+f [instance="floatingShell"] scratchpad show
 $b $mod+Shift+f exec pcmanfm
 $b $mod+n [instance="math"] scratchpad show
 $b $mod+m [instance="cmus"] scratchpad show
-$b $mod+Shift+p exec $sh $SCRIPT_DIR/screenShot
+$b $mod+Shift+p exec flameshot gui
 $b $mod+v exec mpvhd
 $b $mod+w exec --no-startup-id firefox --profile $HOME/.mozilla/firefox/managed --private-window file:///$HOME/.mozilla/firefox/managed/startpage.html
 $b $mod+Shift+w exec chromium
