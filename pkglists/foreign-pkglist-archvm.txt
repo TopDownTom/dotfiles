@@ -1,11 +1,14 @@
 authy
 insomnia-bin
+keepass-keetheme
+keeper-password-manager
 latex-enumitem
+minify
+pass-import
 perl-linux-fd
 protonvpn-cli
 python-proton-client
 python-protonvpn-nm-lib
 python38
 task-spooler
-tunerstudio
 yay-bin

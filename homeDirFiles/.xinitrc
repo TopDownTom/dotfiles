@@ -1,6 +1,10 @@
 #!/bin/sh
 
+# vm stuff
 vboxRes &
+# https://github.com/vmware/open-vm-tools/issues/48
+vmware-user &
+vmware-user-suid-wrapper &
 
 # Set a background
 xwallpaper --stretch $HOME/.pape.png
@@ -11,13 +15,16 @@ urxvtd &
 # start networkmanager applet
 nm-applet &
 
+# start flameshot
+flameshot &
+
 # start pulseaudio daemon
 #pulseaudio -k && pulseaudio -D
 
 ### X Settings
 
 # Set X refresh rate, helps increase scroll speed
-xset r rate 300 50
+xset r rate 600 50
 # Switch capslock and escape key
 setxkbmap -option caps:swapescape
 # External monitor settings, disables power-saving modes which otherwise sleeps the computer

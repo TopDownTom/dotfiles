@@ -27,7 +27,7 @@ autocmd FileType tex inoremap <leader>b \textbf{}<++><Esc>T{i
 " For Mutt compatability, limits the text width "
 au BufRead /tmp/mutt-* set tw=72
 
-" Automatically deletes all trailing whitespace and newlines at end of file on save. LARBS.
+" Automatically deletes all trailing whitespace and newlines at end of file on save. Thanks LARBS.
 autocmd BufWritePre * %s/\s\+$//e
 autocmd BufWritePre * %s/\n\+\%$//e
 autocmd BufWritePre *.[ch] %s/\%$/\r/e
@@ -49,3 +49,6 @@ filetype plugin indent off
 set expandtab
 set tabstop=2
 set shiftwidth=2
+
+" Set colorscheme to use vim defaults
+colorscheme vim
