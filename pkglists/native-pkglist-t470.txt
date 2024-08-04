@@ -12,6 +12,7 @@ bash-completion
 bc
 bluez
 bluez-utils
+cmatrix
 cmus
 dhcpcd
 dialog
@@ -90,6 +91,7 @@ reflector
 rsync
 rust
 rxvt-unicode
+screen
 scrot
 signal-desktop
 sof-firmware
@@ -106,6 +108,7 @@ traceroute
 transmission-qt
 udisks2
 unzip
+upower
 veracrypt
 virtualbox
 virtualbox-host-dkms
