@@ -6,3 +6,4 @@ WantedBy=graphical.target
 
 [Path]
 PathModified=/usr/local/etc/scripts/.git/FETCH_HEAD
+PathModified=/usr/local/etc/scripts/
