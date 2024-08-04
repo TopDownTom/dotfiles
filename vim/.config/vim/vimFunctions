@@ -22,3 +22,8 @@ function! RunProg()
 	:silent execute '!runProg ' . expand("%")
 	:redraw!
 endfunction
+
+" Switches on/off displaying space and tab marks in vim
+function! ShowSpaces()
+  :set invlist
+endfunction

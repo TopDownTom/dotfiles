@@ -19,6 +19,7 @@ set nohlsearch
 nnoremap \c :call ColorColumn()<cr>
 noremap \p :call MakePdf()<cr>
 noremap \r :call RunProg()<cr>
+noremap \. :call ShowSpaces()<cr>
 vmap # :s/^/#/
 vmap ## :s/^#//
 autocmd FileType tex inoremap <C-y> \textit{}<++><Esc>T{i
@@ -49,5 +50,7 @@ filetype plugin indent off
 set expandtab
 set tabstop=2
 set shiftwidth=2
+set lcs+=space:·
+set lcs+=tab:>-
 
 colorscheme vim
