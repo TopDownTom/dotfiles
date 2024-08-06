@@ -22,3 +22,8 @@ function! RunProg()
 	:silent execute '!runProg ' . expand("%")
 	:redraw!
 endfunction
+
+" Turns on spacing dots
+function! ShowSpace()
+    :set invlist
+endfunction
