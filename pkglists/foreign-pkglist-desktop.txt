@@ -9,6 +9,7 @@ python-pyautogui
 python-sklearn-pandas
 simple-mtpfs
 task-spooler
+task-spooler-debug
 tunerstudio
 vobcopy
 yay-bin
