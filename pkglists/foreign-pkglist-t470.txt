@@ -2,6 +2,7 @@ latex-enumitem
 perl-linux-fd
 protonvpn-cli
 python37
+rest-debug
 task-spooler
 tunerstudio
 yay-bin

@@ -29,7 +29,9 @@ gcc
 gimp
 git
 go
+gobject-introspection
 grub
+gtk-doc
 i3-wm
 i3blocks
 i3lock
