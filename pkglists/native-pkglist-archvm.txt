@@ -21,6 +21,7 @@ dialog
 dictd
 discord
 dmenu
+docker
 dog
 dos2unix
 dunst
@@ -29,6 +30,7 @@ fatsort
 firefox
 flameshot
 gcc
+giggle
 gimp
 git
 go
@@ -41,6 +43,7 @@ i3lock
 i3status
 intel-ucode
 ipcalc
+ipv6calc
 iwd
 jq
 keepass
@@ -91,6 +94,7 @@ plocate
 powertop
 pulseaudio
 pulseaudio-bluetooth
+putty
 python
 python-flask
 python-matplotlib

@@ -9,6 +9,8 @@ perl-linux-fd
 protonvpn-cli
 python-proton-client
 python-protonvpn-nm-lib
+python2
 python38
 task-spooler
+tctl
 yay-bin
