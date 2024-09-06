@@ -57,6 +57,7 @@ linux-lts-headers
 m4
 make
 man-db
+mlocate
 monero
 monero-gui
 mpv

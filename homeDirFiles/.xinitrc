@@ -21,6 +21,9 @@ flameshot &
 # start pulseaudio daemon
 #pulseaudio -k && pulseaudio -D
 
+# start flameshot in the background
+flameshot &
+
 ### X Settings
 
 # Set X refresh rate, helps increase scroll speed

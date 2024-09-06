@@ -1,13 +1,12 @@
-https://spacer.com/ "~[ Blogs & Sites ]"
+"---Blogs & Feeds---"
 https://coffeeadastra.com/feed/
 https://lukesmith.xyz/rss.xml "~Luke Smith"
 https://videos.lukesmith.xyz/feeds/videos.xml?accountId=3 "~Unaboomer Peertube"
 https://archlinux.org/feeds/news/
 https://lists.archlinux.org/archives/list/arch-dev-public@lists.archlinux.org/feed/
-
-https://www.spacer.com "~ "
-https://www.spacer.com "~ "
-
+" "
+"---Videos---"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCsrKsXEAqCbZyVrCibkgpwQ # 9-Hole Reviews
 https://www.youtube.com/feeds/videos.xml?channel_id=UC3QjBcBCtS4I-OWKpTBBFWA # Administrative Results
 https://www.youtube.com/feeds/videos.xml?channel_id=UCsE_m2z1NrvF2ImeNWh84mw # ActiveSelfProection
 https://www.youtube.com/feeds/videos.xml?channel_id=UCNJuJfXCKNWu4-VifYixs8A # Aquarium Co-Op
@@ -20,6 +19,7 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCcwLVJ0hC4YnSfMRlolkVDw # B
 https://www.youtube.com/feeds/videos.xml?channel_id=UCloY8U8fMVfKp39FCqyCFVw # Brass Facts
 https://odysee.com/$/rss/@BrodieRobertson:5 "~Brodie Robertson"              # Brodie Robertson
 https://www.youtube.com/feeds/videos.xml?channel_id=UCi8XrDg1bK_MJ0goOnbpTMQ # budlabs
+https://www.youtube.com/feeds/videos.xml?channel_id=UCx1dcBo2yy54B9OQqdiSXQg # C_DOES
 https://www.youtube.com/feeds/videos.xml?channel_id=UCru5avTyBh7CiCbvMCHmc4A # Cemetery Confessions
 https://www.youtube.com/feeds/videos.xml?channel_id=UCrPUg54jUy1T_wII9jgdRbg # Chris Ramsay
 https://www.youtube.com/feeds/videos.xml?channel_id=UCh8f8vssLddD2PbnU3Ag_Bw # Cleetus McFarland
@@ -31,7 +31,6 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCVHOgH4XEyYx-ZEaya1XqCQ # C
 https://www.youtube.com/feeds/videos.xml?channel_id=UCUQo7nzH1sXVpzL92VesANw # DIY Perks
 https://www.youtube.com/feeds/videos.xml?channel_id=UCPhVv8K3Z1t8e-EHb-FsnMQ # DJ ISAAC
 https://www.youtube.com/feeds/videos.xml?channel_id=UCfcVy69dd3v1-R1QkXh_8Eg # Delta Notch
-https://www.youtube.com/feeds/videos.xml?channel_id=UCBvc7pmUp9wiZIFOXEp1sCg # Demolition Ranch
 https://odysee.com/$/rss/@DistroTube:2 # DistroTube
 https://www.youtube.com/feeds/videos.xml?channel_id=UCwkm_Wcyh0pc7UUmZZfL-6w # Donut Operator
 https://www.youtube.com/feeds/videos.xml?channel_id=UCHb-gPG8N_G1PF3S8RlWLDQ # Donut Raw Police Footage
@@ -41,7 +40,7 @@ https://feeds.utreon.com/c/G460eXSiXC0F84rqsaiSGU/videos.xml "~Forgotten Weapons
 https://www.youtube.com/feeds/videos.xml?channel_id=UCrfKGpvbEQXcbe68dzXgJuA # Forgotten Weapons
 https://odysee.com/$/rss/@FreeStateProject:7 "~Free State Project" # Free State Project
 https://www.youtube.com/feeds/videos.xml?channel_id=UC0RBTQIYLEQbcahZWkmzeTQ # GarandThumb
-https://www.youtube.com/feeds/videos.xml?channel_id=UCL4QnJfhDPSZwlUI3rkftdg # Geytkeypur
+https://www.youtube.com/feeds/videos.xml?channel_id=UCXPY1nHXEkajGn3RHOCNZvA # Geytkeypur
 https://www.youtube.com/feeds/videos.xml?channel_id=UCzth5Gn76oZiLQ0EHjc0r-g # Gipnozer
 https://www.youtube.com/feeds/videos.xml?channel_id=UCOviJ8lr6PHli_PjCH0a-4g # Goobertown Hobbies
 https://www.youtube.com/feeds/videos.xml?channel_id=UCnBDxCjebmuI0jFm9LG78Sw # GothCast Video
@@ -55,7 +54,10 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCuunZEbo3XJFR5q1neQNXnw # I
 https://www.youtube.com/feeds/videos.xml?channel_id=UCPu3YP9Qgl46UdFrGvyguNw # Iron Cthulhu Apocalypse
 https://www.youtube.com/feeds/videos.xml?channel_id=UCMb0O2CdPBNi-QqPk5T3gsQ # James Hoffman
 https://www.youtube.com/feeds/videos.xml?channel_id=UCTzK7U_dwVDle2V6DwhgGIw # jonnie13black
+https://www.youtube.com/feeds/videos.xml?channel_id=UCPzNFlt5v5Uq8lTCFXBak-A # Kit Badger
 https://www.youtube.com/feeds/videos.xml?channel_id=UCOrYZXEHuS0NWbalwhXSZ4A # Kurtosis Metal
+https://www.youtube.com/feeds/videos.xml?channel_id=UCob_jm6ikyHVKRkgcB7Irrg # Kyle Rittenhouse
+https://odysee.com/$/rss/@lawofselfdefense:9 # Law of Self Defense
 https://www.youtube.com/feeds/videos.xml?channel_id=UC0ox9NuTHYeRys63yZpBFuA # Learn Japanese with JapanesePod101.com
 https://odysee.com/$/rss/@LibertyDoll:e "~LibertyDoll" # LibertyDoll
 https://www.youtube.com/feeds/videos.xml?channel_id=UCm9K6rby98W8JigLoZOh6FQ # Lockpickinglawer
@@ -64,10 +66,10 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA # L
 https://www.youtube.com/feeds/videos.xml?channel_id=UCEVndLRqBDNcZhBdWo5oepg # Master Boot Record
 https://www.youtube.com/feeds/videos.xml?channel_id=UCtDKqH3LBkYrNpYwgfn9nXg # melbourne shuffle kouki
 https://www.youtube.com/feeds/videos.xml?channel_id=UCvLX0T0yck4kEIgcsbi03YA # Mike MiataKing
+https://www.youtube.com/feeds/videos.xml?channel_id=UCyDHhBDEBYrYzsjC-nTbQzQ # Mountain, Mullets, Merica!
 https://www.youtube.com/feeds/videos.xml?channel_id=UCuYLDxZWv-aal88czKkFvKA # NIGHTRIDE
 https://www.youtube.com/feeds/videos.xml?channel_id=UCM_rcj-Ig5IZN-RElgkbt6g # Nephilim Incorruptus
 https://www.youtube.com/feeds/videos.xml?channel_id=UCZGkMJEmCR1IqUduqt1uFUw # Noriyaro
-https://www.youtube.com/feeds/videos.xml?channel_id=UCoxcjq-8xIDTYp3uz647V5A # Numberphile
 https://www.youtube.com/feeds/videos.xml?channel_id=UCbphE0iYTXVlmDKS3jzp7zA # PansyPatrol
 https://odysee.com/$/rss/@paul_Harrell:a # Paul Harrel
 https://www.youtube.com/feeds/videos.xml?channel_id=UCtESv1e7ntJaLJYKIO1FoYw # Periodic Videos
@@ -90,8 +92,9 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCnNlJNSRxa3PF8XrKHOEPug # T
 https://www.youtube.com/feeds/videos.xml?channel_id=UCY7ZNcVB9S2T5Go9Yjks3Gg # TheCarPassionChannel
 https://www.youtube.com/feeds/videos.xml?channel_id=UCYRRzF-_JE0WJpyiTbkBfaw # T-Rex Armory
 https://odysee.com/$/rss/@trexarms:9 "~T.REX Arms" # Trex-Arms
+https://www.youtube.com/feeds/videos.xml?channel_id=UC3tRZmTxRX33EnTbZJG4jUw # T-Rex Labs
 https://feeds.buzzsprout.com/1304248.rss # trex-podcasts
-https://www.youtube.com/feeds/videos.xml?channel_id=UCAzKFALPuF_EPe-AEI0WFFw # Two-Set Violin
 https://www.youtube.com/feeds/videos.xml?channel_id=UC1T8fWeUFsc7v6-Can111Wg # Wallace Melb shuffler
+https://www.youtube.com/feeds/videos.xml?channel_id=UC3UpGPbOIOG6IaUijyRpp6Q # voces8
 https://www.youtube.com/feeds/videos.xml?channel_id=UCDoJIpPvtEwFvfNXsZvCqKw # Xander Budnick
 https://www.youtube.com/feeds/videos.xml?channel_id=UCekQr9znsk2vWxBo3YiLq2w # You Suck At Cookin
