@@ -103,6 +103,7 @@ sudo
 sxiv
 systemd-resolvconf
 texlive-latex
+texlive-latexrecommended
 texmaker
 tlp
 tmux
