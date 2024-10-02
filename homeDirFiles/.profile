@@ -1,10 +1,8 @@
-# SSH-Agent Prompt At Login
+# start the ssh-agent on initial bash so all shells have access to these vars
 if [ ! -S $HOME/.ssh/ssh_auth_sock ]; then
-  eval `ssh-agent`
+  eval `ssh-agent` 1> /dev/null
   ln -sf "$SSH_AUTH_SOCK" $HOME/.ssh/ssh_auth_sock
 fi
-export SSH_AUTH_SOCK=$HOME/.ssh/ssh_auth_sock
-ssh-add -l > /dev/null || ssh-add
 
 # System variables
 export XDG_CONFIG_HOME="$HOME/.config/"
@@ -18,6 +16,7 @@ export USER_FONT='Anonymice Nerd Font'
 export TEXMFHOME="$HOME/.config/texmf/"
 export SCRIPT_DIR="/usr/local/etc/scripts"
 export USER_CONFIG_DIR="/usr/local/etc/user_configs"
+export SSH_AUTH_SOCK=$HOME/.ssh/ssh_auth_sock
 
 # Start X-Org on login
 if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
