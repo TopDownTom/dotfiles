@@ -1,8 +1,8 @@
 latex-enumitem
 perl-linux-fd
-protonvpn-cli
+proton-vpn-gtk-app
+python-pyrsistent-debug
 python37
-rest-debug
 task-spooler
 tunerstudio
 yay-bin

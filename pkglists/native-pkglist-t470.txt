@@ -52,7 +52,6 @@ lshw
 lsof
 make
 man-db
-mlocate
 mpv
 mtpfs
 neovim
@@ -81,6 +80,7 @@ perl-sub-exporter
 perl-test-exception
 picom
 pkgconf
+plocate
 powertop
 pulseaudio
 pulseaudio-bluetooth
