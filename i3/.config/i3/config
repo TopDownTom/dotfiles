@@ -182,7 +182,7 @@ $b $mod+F2 exec $SCRIPT_DIR/timer
 $b $mod+F3 exec $SCRIPT_DIR/pomoTimer
 $b $mod+F7 exec $SCRIPT_DIR/display
 $b $mod+f [instance="floatingShell"] scratchpad show
-$b $mod+Shift+f exec pcmanfm
+$b $mod+Shift+f exec $TERMINAL -n floatingShell -e tmux new -s float
 $b $mod+n [instance="math"] scratchpad show
 $b $mod+m [instance="cmus"] scratchpad show
 $b $mod+Shift+p exec flameshot gui
