@@ -215,7 +215,7 @@ bar {
 		inactive_workspace #333333 #222222 #888888
 		urgent_workspace   #2f343a #900000 #ffffff
 	}
-	tray_output none
+	tray_output primary
 	font xft:Anonymice Nerd Font 15
 	position top
 	status_command i3blocks -c $HOME/.config/i3/i3blocks.conf
