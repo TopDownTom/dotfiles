@@ -107,6 +107,7 @@ texlive-latexrecommended
 texmaker
 tlp
 tmux
+torbrowser-launcher
 traceroute
 transmission-qt
 udisks2
