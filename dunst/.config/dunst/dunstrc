@@ -1,21 +1,18 @@
 [global]
     alignment = right
-    allow_markup = yes
-    bounce_freq = 1
-    browser = /usr/bin/firefox --new-private-window
-    dmenu = /usr/bin/dmenu -p dunst:
-    follow = none
-    font = Monospace 10
+    browser = /usr/bin/firefox --profile $HOME/.mozilla/firefox/managed --new-private-window
+    follow = mouse
+    font = Anonymice Nerd Font 13
     format = "<b>%s</b>\n%b"
     width = 600
     height = 85
+    offset = 10x50
     history_length = 20
     horizontal_padding = 8
     idle_threshold = 120
     ignore_newline = no
     indicate_hidden = yes
     line_height = 0
-    monitor = 0
     padding = 9
     separator_color = frame
     separator_height = 1
@@ -23,14 +20,9 @@
     show_indicators = yes
     shrink = yes
     sort = yes
-    startup_notification = false
     sticky_history = yes
     transparency = 0
     word_wrap = no
-
-[frame]
-    width = 1
-    color = "#e89609"
 
 [urgency_low]
     background = "#000000"
@@ -39,8 +31,9 @@
 
 [urgency_normal]
     background = "#007f00"
-    foreground = "#e89609"
-    timeout = 20
+    foreground = "#000000"
+    timeout = 15
+    new_icon = ~/.bsod.png
 
 [urgency_critical]
     background = "#801515"
@@ -49,4 +42,3 @@
 
 [i3blocks]
     summary = "*"
-    script = ~/.bin/notify
