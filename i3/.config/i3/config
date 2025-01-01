@@ -137,16 +137,7 @@ $b $mod+Shift+9 move $cont to $ws number 9
 $b $mod+Shift+0 move $cont to $ws number 0
 
 # Put workspaces on specific monitors
-# $ws 0 output eDP-1
-$ws 1 output eDP-1
-$ws 2 output DP-1-1 eDP-1
-$ws 3 output DP-1-1 eDP-1
-$ws 4 output DP-1-3 eDP-1
-$ws 5 output DP-1-3 eDP-1
-$ws 6 output DP-1-3 eDP-1
-$ws 7 output DP-1-3 eDP-1
-$ws 8 output DP-1-3 eDP-1
-$ws 9 output DP-1-3 eDP-1
+include $HOME/.config/i3/monitor_workspaces.conf
 
 # Kill or rename a workspace
 $b $mod+q exec i3-input -F '[$ws=^%s$] kill' -P 'WS: '
