@@ -1,5 +1,0 @@
-[Unit]
-Description=watch for i3 blocks config changes
-
-[Path]
-PathModified=/usr/local/etc/user_configs/i3/.config/i3/i3blocks.conf

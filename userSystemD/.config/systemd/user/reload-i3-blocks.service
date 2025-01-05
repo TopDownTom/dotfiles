@@ -1,7 +1,0 @@
-[Unit]
-Description=reload i3 config
-
-[Service]
-Environment=DISPLAY=:0
-Type=oneshot
-ExecStart=i3-msg reload
