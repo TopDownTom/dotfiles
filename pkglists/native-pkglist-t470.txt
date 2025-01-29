@@ -36,6 +36,7 @@ i3-wm
 i3blocks
 i3lock
 i3status
+inotify-tools
 intel-ucode
 iwd
 jq
@@ -82,6 +83,7 @@ picom
 pkgconf
 plocate
 powertop
+proton-vpn-gtk-app
 pulseaudio
 pulseaudio-bluetooth
 python-matplotlib
@@ -102,6 +104,7 @@ stow
 sudo
 sxiv
 systemd-resolvconf
+tcpdump
 texlive-latex
 texlive-latexrecommended
 texmaker

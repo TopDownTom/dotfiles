@@ -1,6 +1,7 @@
+bluetuith
+brave-bin
 latex-enumitem
 perl-linux-fd
-proton-vpn-gtk-app
 python37
 signal-cli
 task-spooler
