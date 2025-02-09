@@ -87,8 +87,11 @@ proton-vpn-gtk-app
 pulseaudio
 pulseaudio-bluetooth
 python-matplotlib
+python-pandas
 python-passlib
 python-pip
+python-scipy
+python-seaborn
 python-virtualenv
 read-edid
 reflector
