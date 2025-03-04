@@ -1,8 +1,6 @@
-bluetuith
 brave-bin
 latex-enumitem
 perl-linux-fd
-python37
 task-spooler
 tunerstudio
 yay-bin
