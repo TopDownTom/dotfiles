@@ -23,7 +23,7 @@ function! RunProg()
 	:redraw!
 endfunction
 
-" Switches on/off displaying space and tab marks in vim
-function! ShowSpaces()
-  :set invlist
+" Turns on spacing dots
+function! ShowSpace()
+    :set invlist
 endfunction

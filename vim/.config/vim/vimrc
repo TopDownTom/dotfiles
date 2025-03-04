@@ -19,7 +19,7 @@ set nohlsearch
 nnoremap \c :call ColorColumn()<cr>
 noremap \p :call MakePdf()<cr>
 noremap \r :call RunProg()<cr>
-noremap \. :call ShowSpaces()<cr>
+noremap \. :call ShowSpace()<cr>
 vmap # :s/^/#/
 vmap ## :s/^#//
 autocmd FileType tex inoremap <C-y> \textit{}<++><Esc>T{i
@@ -28,7 +28,7 @@ autocmd FileType tex inoremap <leader>b \textbf{}<++><Esc>T{i
 " For Mutt compatability, limits the text width "
 au BufRead /tmp/mutt-* set tw=72
 
-" Automatically deletes all trailing whitespace and newlines at end of file on save. LARBS.
+" Automatically deletes all trailing whitespace and newlines at end of file on save. Thanks LARBS.
 autocmd BufWritePre * %s/\s\+$//e
 autocmd BufWritePre * %s/\n\+\%$//e
 autocmd BufWritePre *.[ch] %s/\%$/\r/e
@@ -53,4 +53,5 @@ set shiftwidth=2
 set lcs+=space:·
 set lcs+=tab:>-
 
+" Set colorscheme to use vim defaults
 colorscheme vim
