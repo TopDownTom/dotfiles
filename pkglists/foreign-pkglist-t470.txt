@@ -1,4 +1,4 @@
-brave-bin
+dbeaver-jvm-hook
 latex-enumitem
 perl-linux-fd
 task-spooler

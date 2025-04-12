@@ -12,8 +12,12 @@ bash-completion
 bc
 bluez
 bluez-utils
+chromium
 cmatrix
 cmus
+cups
+cups-pdf
+dbeaver
 dhcpcd
 dialog
 dictd
