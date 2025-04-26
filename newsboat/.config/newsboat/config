@@ -17,7 +17,7 @@ bind-key k	up
 bind-key l	open
 bind-key U	show-urls
 
-macro m set browser "/usr/local/sbin/vidQueue %u %T"; open-in-browser
+macro m set browser "/usr/local/sbin/vidQueue '%u' \"%T\""; open-in-browser
 
 # Colors
 highlight feedlist ".*(0/0))" black default default
