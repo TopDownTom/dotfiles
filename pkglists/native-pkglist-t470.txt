@@ -1,4 +1,5 @@
 acpi
+adobe-source-han-sans-jp-fonts
 alsa-utils
 android-tools
 ansible
@@ -67,6 +68,7 @@ nmap
 offroad
 openssh
 openvpn
+otf-ipafont
 pacman-contrib
 pamixer
 paprefs
@@ -124,6 +126,7 @@ upower
 veracrypt
 virtualbox
 virtualbox-host-dkms
+vlc
 wget
 which
 whois
