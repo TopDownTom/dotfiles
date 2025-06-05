@@ -91,6 +91,7 @@ powertop
 proton-vpn-gtk-app
 pulseaudio
 pulseaudio-bluetooth
+pv
 python-matplotlib
 python-pandas
 python-passlib
