@@ -24,6 +24,7 @@ dialog
 dictd
 dmenu
 docker
+docker-buildx
 dog
 dunst
 fatsort
