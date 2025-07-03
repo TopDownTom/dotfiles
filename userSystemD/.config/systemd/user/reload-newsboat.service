@@ -1,0 +1,11 @@
+[Unit]
+Description=Reload newsboat database
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/newsboat -x reload
+RemainAfterExit=false
+
+[Install]
+WantedBy=multi-user.target

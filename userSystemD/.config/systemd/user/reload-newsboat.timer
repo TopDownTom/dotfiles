@@ -1,0 +1,9 @@
+[Unit]
+Description=Initiate the reload-newsboat.service file every 15 minutes
+After=network-online.target
+
+[Timer]
+OnCalendar=*:0/15
+
+[Install]
+WantedBy=multi-user.target
