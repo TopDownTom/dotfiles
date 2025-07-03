@@ -44,6 +44,7 @@ $a scr='$SCRIPT_DIR/scriptGen'
 $a setWallPape='xwallpaper --stretch $HOME/.pape.png'
 $a susp='systemctl suspend'
 $a sxiv='sxiv -ap'
+$a userctl='systemctl --user'
 $a xrdbload='xrdb load $HOME/.Xresources'
 
 # Opening config files
