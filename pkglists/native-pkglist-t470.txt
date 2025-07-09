@@ -58,6 +58,7 @@ lshw
 lsof
 make
 man-db
+mesa-utils
 mpv
 mtpfs
 neovim
