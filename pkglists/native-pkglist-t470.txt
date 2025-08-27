@@ -19,6 +19,7 @@ cmus
 cups
 cups-pdf
 dbeaver
+ddgr
 dhcpcd
 dialog
 dictd
@@ -109,6 +110,7 @@ rxvt-unicode
 screen
 signal-desktop
 sof-firmware
+speedtest-cli
 sshfs
 stow
 sudo
@@ -129,7 +131,6 @@ upower
 veracrypt
 virtualbox
 virtualbox-host-dkms
-vlc
 wget
 which
 whois

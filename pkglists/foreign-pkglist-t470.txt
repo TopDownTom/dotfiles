@@ -1,7 +1,8 @@
-brave-bin
 dbeaver-jvm-hook
 latex-enumitem
 perl-linux-fd
+python310
+stable-diffusion-webui
 task-spooler
 tunerstudio
 yay-bin
