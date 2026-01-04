@@ -23,7 +23,7 @@ $a yt='yt-dlp -f 22'
 $a ytd='$SCRIPT_DIR/youtubedl' # more general script than the two aliases
 $a ytpm='yt-dlp -f bestaudio --add-metadata' # downloads [m]usic playlists in .mp4 format with their native filenames
 $a ytpv='yt-dlp -f 137 -i -o "%(title)s.mp4-video"' # downloads [v]ideo playlists in .mp4 format with their native filenames
-$a ytpa='yt-dlp -f 140 -i -o "%(title)s.m4a"' # downloads [a]udio playlists in .m4a format with their native filenames
+$a ytpa='yt-dlp -f bestaudio -i -o "%(title)s.%(ext)s"' # downloads [a]udio playlists in .m4a format with their native filenames
 
 # Command shorthand
 $a ap='ansible-playbook -i inventory'
