@@ -20,6 +20,7 @@ cups
 cups-pdf
 dbeaver
 ddgr
+dejagnu
 dhcpcd
 dialog
 dictd
@@ -27,7 +28,9 @@ dmenu
 docker
 docker-buildx
 dog
+doxygen
 dunst
+expect
 fatsort
 firefox
 flameshot
@@ -38,10 +41,12 @@ go
 gobject-introspection
 grub
 gtk-doc
+gvfs-mtp
 i3-wm
 i3blocks
 i3lock
 i3status
+inetutils
 inotify-tools
 intel-ucode
 iwd
@@ -57,6 +62,7 @@ linux-lts
 linux-lts-headers
 lshw
 lsof
+lynx
 make
 man-db
 mesa-utils
@@ -101,6 +107,7 @@ python-passlib
 python-pip
 python-scipy
 python-seaborn
+python-setuptools-scm
 python-virtualenv
 read-edid
 reflector
@@ -113,6 +120,7 @@ sof-firmware
 speedtest-cli
 sshfs
 stow
+strace
 sudo
 sxiv
 systemd-resolvconf
@@ -145,6 +153,7 @@ xorg-xinput
 xorg-xrandr
 xournalpp
 xwallpaper
+yq
 yt-dlp
 zathura
 zathura-pdf-poppler

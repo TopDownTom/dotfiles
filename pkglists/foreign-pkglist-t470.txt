@@ -1,7 +1,9 @@
 dbeaver-jvm-hook
+jmtpfs
 latex-enumitem
 perl-linux-fd
 python310
+simple-mtpfs
 stable-diffusion-webui
 task-spooler
 tunerstudio
