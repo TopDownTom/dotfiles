@@ -12,8 +12,11 @@ urxvtd &
 # start networkmanager applet
 nm-applet &
 
+# start protonvpn
+type protonvpn-app 2>/dev/null && testOnline && protonvpn-app &
+
 # start pulseaudio daemon
-pulseaudio -k && pulseaudio -D
+pulseaudio -k || pulseaudio -D
 
 # start flameshot in the background
 flameshot &
