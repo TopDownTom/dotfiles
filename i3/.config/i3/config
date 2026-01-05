@@ -179,7 +179,7 @@ $b $mod+n [instance="math"] scratchpad show
 $b $mod+m [instance="cmus"] scratchpad show
 $b $mod+Shift+p exec flameshot gui
 $b $mod+v exec mpvhd
-$b $mod+w exec --no-startup-id firefox --profile $HOME/.mozilla/firefox/managed --private-window file:///$HOME/.mozilla/firefox/managed/startpage.html
+$b $mod+w exec --no-startup-id firefox --profile $HOME/.mozilla/firefox/managed --private-window file:///$HOME/.browser/startpage.html
 $b $mod+Shift+w exec chromium
 $b $mod+Prior exec i3-msg -t run_command 'move scratchpad'
 $b $mod+Next exec i3-msg -t run_command 'scratchpad show'
