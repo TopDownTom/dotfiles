@@ -13,6 +13,7 @@ bash-completion
 bc
 bluez
 bluez-utils
+btop
 chromium
 cmatrix
 cmus
@@ -20,7 +21,6 @@ cups
 cups-pdf
 dbeaver
 ddgr
-dejagnu
 dhcpcd
 dialog
 dictd
@@ -28,9 +28,7 @@ dmenu
 docker
 docker-buildx
 dog
-doxygen
 dunst
-expect
 fatsort
 firefox
 flameshot
@@ -46,7 +44,6 @@ i3-wm
 i3blocks
 i3lock
 i3status
-inetutils
 inotify-tools
 intel-ucode
 iwd
