@@ -29,11 +29,9 @@ $b $mod+Return exec $TERMINAL
 $b $mod+Shift+Return exec open_cwd
 
 ######### Autostart ##########
-exec --no-startup-id exec $TERMINAL -n math -e bc -lq
-exec --no-startup-id exec $TERMINAL -n floatingShell -e tmux new -s float
-exec --no-startup-id exec $TERMINAL -n cmus -e cmus
+exec --no-startup-id exec urxvtd
+exec --no-startup-id exec /usr/local/etc/user_configs/i3/.config/i3/autostart
 exec --no-startup-id exec $TERMINAL
-exec --no-startup-id exec dunst
 
 $b $mod+d exec dmenu_run
 
@@ -152,13 +150,14 @@ $b $mod+g exec i3-input -F '[con_mark="%s"] focus' -l 4 -P 'Goto: '
 $b XF86MonBrightnessUp exec $sh $SCRIPT_DIR/brightControl up
 $b XF86MonBrightnessDown exec $sh $SCRIPT_DIR/brightControl down
 
-$b XF86AudioRaiseVolume exec pamixer -i 5  && pkill -SIGRTMIN+2 i3blocks
-$b XF86AudioLowerVolume exec pamixer -d 5 && pkill -SIGRTMIN+2 i3blocks
-$b XF86AudioMute exec pamixer -t && pkill -SIGRTMIN+2 i3blocks
+$b XF86AudioRaiseVolume exec $sh $SCRIPT_DIR/pipewire-volume.sh up
+$b XF86AudioLowerVolume exec $sh $SCRIPT_DIR/pipewire-volume.sh down
+$b XF86AudioMute exec $sh $SCRIPT_DIR/pipewire-volume.sh mute
+
 # To stay on keyboard + right hand control
-$b $mod+bracketright exec pamixer -i 5  && pkill -SIGRTMIN+2 i3blocks
-$b $mod+bracketleft exec pamixer -d 5 && pkill -SIGRTMIN+2 i3blocks
-$b $mod+Shift+backslash exec pamixer -t && pkill -SIGRTMIN+2 i3blocks
+$b $mod+bracketright exec $sh $SCRIPT_DIR/pipewire-volume.sh up
+$b $mod+bracketleft exec $sh $SCRIPT_DIR/pipewire-volume.sh down
+$b $mod+Shift+backslash exec $sh $SCRIPT_DIR/pipewire-volume.sh mute
 
 ### cmus-remote ###
 $b XF86AudioPrev exec cmus-remote --prev && pkill -SIGRTMIN+1 i3blocks
@@ -174,13 +173,15 @@ $b $mod+F2 exec $SCRIPT_DIR/timer
 $b $mod+F3 exec $SCRIPT_DIR/pomoTimer
 $b $mod+F7 exec $SCRIPT_DIR/display
 $b $mod+f [instance="floatingShell"] scratchpad show
-$b $mod+Shift+f exec $TERMINAL -n floatingShell -e tmux new -s float
+$b $mod+Shift+f exec $TERMINAL -name floatingShell -e tmux new -s float
 $b $mod+n [instance="math"] scratchpad show
 $b $mod+m [instance="cmus"] scratchpad show
+$b $mod+Shift+m exec $TERMINAL -name cmus -e cmus
 $b $mod+Shift+p exec flameshot gui
+$b $mod+Shift+s exec steam
 $b $mod+v exec mpvhd
-$b $mod+w exec --no-startup-id firefox --profile $HOME/.mozilla/firefox/managed --private-window file:///$HOME/.browser/startpage.html
-$b $mod+Shift+w exec chromium
+$b $mod+w exec --no-startup-id firefox --private-window file:///$HOME/.browser/startpage.html
+$b $mod+Shift+w exec chromium --incognito
 $b $mod+Prior exec i3-msg -t run_command 'move scratchpad'
 $b $mod+Next exec i3-msg -t run_command 'scratchpad show'
 

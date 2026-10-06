@@ -1,19 +1,13 @@
 #!/bin/sh
 
-# Compositor
-picom &
-
-# Set a background
-xwallpaper --stretch $HOME/.pape.png
-
 # Start Rxvt-unicode daemon
 urxvtd &
 
 # start networkmanager applet
-nm-applet &
+#nm-applet &
 
 # start protonvpn
-type protonvpn-app 2>/dev/null && testOnline && protonvpn-app &
+#type protonvpn-app 2>/dev/null && testOnline && protonvpn-app &
 
 # start pulseaudio daemon
 pulseaudio -k || pulseaudio -D
@@ -23,13 +17,7 @@ flameshot &
 
 ### X Settings
 
-# Set X refresh rate, helps increase scroll speed
-xset r rate 300 50
-# Switch capslock and escape key
-setxkbmap -option caps:swapescape
 # External monitor settings, disables power-saving modes which otherwise sleeps the computer
-xset s off
-xset -dpms
 # Disable touchpad
 xinput disable "SynPS/2 Synaptics TouchPad"
 
@@ -47,6 +35,17 @@ fi
 
 # systemd user units
 systemctl --user start reload-i3.path
+
+DBUS_SESSION_BUS_ADDRESS="$(systemctl --user show-environment | sed -n 's/^DBUS_SESSION_BUS_ADDRESS=//p')"
+export DBUS_SESSION_BUS_ADDRESS
+
+DBUS_SESSION_BUS_PID="$(systemctl --user show-environment | sed -n 's/^DBUS_SESSION_BUS_PID=//p')"
+[ -n "$DBUS_SESSION_BUS_PID" ] && export DBUS_SESSION_BUS_PID
+
+dbus-update-activation-environment DISPLAY XAUTHORITY
+
+# start the notification daemon
+systemctl --user start dunst
 
 ## Start the WM
 # This gets passed from startx in $HOME/.profile. Setting it up this way allows me to select from a list of WMs

@@ -7,7 +7,7 @@ fi
 # System variables
 export XDG_CONFIG_HOME="$HOME/.config/"
 export EDITOR="nvim"
-export TERMINAL="st"
+export TERMINAL="urxvtc"
 export BROWSER="firefox --profile $HOME/.mozilla/firefox/managed --private-window file:///$HOME/.mozilla/firefox/managed/startpage.html"
 export VIEWER="sxiv"
 export PDFVIEWER="zathura"

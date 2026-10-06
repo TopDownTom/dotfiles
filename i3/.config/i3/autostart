@@ -1,0 +1,30 @@
+#! /bin/bash
+
+# X refresh rate and key debounce
+xset r rate 300 50
+
+# X turn off the screensaver functionality
+xset s off
+
+# X turn off DisplayPowerManagementSoftware handling
+xset -dpms
+
+# swap caps and escape
+setxkbmap -option caps:swapescape
+
+# start user service for reloading i3 on config change
+systemctl --user start reload-i3.path
+
+# set a background
+xwallpaper --stretch $HOME/.pape.png
+
+# turn on the compositor
+picom &
+
+# i3 floating windows
+$TERMINAL -name floatingShell -e tmux new -s float
+$TERMINAL -name cmus -e cmus
+$TERMINAL -name math -e bc -lq
+
+# give everything a moment to come up
+sleep 2
