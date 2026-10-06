@@ -1,0 +1,10 @@
+[Unit]
+Description=Change the root display background
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/changeBackground -v
+RemainAfterExit=false
+
+[Install]
+WantedBy=default.target
