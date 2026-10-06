@@ -54,4 +54,4 @@ set lcs+=space:·
 set lcs+=tab:>-
 
 " Set colorscheme to use vim defaults
-colorscheme vim
+colorscheme default
