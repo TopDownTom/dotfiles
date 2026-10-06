@@ -22,13 +22,15 @@ $a ..='cd ../'
 $a yt='yt-dlp -f 22'
 $a ytd='$SCRIPT_DIR/youtubedl' # more general script than the two aliases
 $a ytpm='yt-dlp -f bestaudio --add-metadata' # downloads [m]usic playlists in .mp4 format with their native filenames
-$a ytpv='yt-dlp -f 137 -i -o "%(title)s.mp4-video"' # downloads [v]ideo playlists in .mp4 format with their native filenames
+$a ytpv='yt-dlp -i -o "%(title)s.%(ext)s"' # downloads [v]ideo playlists in .mp4 format with their native filenames
 $a ytpa='yt-dlp -f bestaudio -i -o "%(title)s.%(ext)s"' # downloads [a]udio playlists in .m4a format with their native filenames
 
 # Command shorthand
 $a ap='ansible-playbook -i inventory'
+$a aptsyu='sudo apt update && sudo apt upgrade -y && sudo apt autoremove'
 $a bc='bc -lq'
 $a beep='speaker-test -t sine -f 1000'
+$a cal='ncal -b'
 $a copy='xclip -selection clipboard -i'
 $a cmatrix='cmatrix -u 10 -s'
 $a grindCompare='py3 $HOME/docs/coffee/coffeegrindsize/App/dist/coffeegrindsize.app/Contents/Resources/coffeegrindsize.py & disown'
@@ -45,6 +47,9 @@ $a setWallPape='xwallpaper --stretch $HOME/.pape.png'
 $a susp='systemctl suspend'
 $a sxiv='sxiv -ap'
 $a userctl='systemctl --user'
+$a userjournal='journalctl --user -xef'
+$a vcrypt="veracrypt -t -k '' --pim=0 --protect-hidden=no"
+$a vidCombine='ffmpeg -f concat -safe 0 -i parts.txt -c copy'
 $a xrdbload='xrdb load $HOME/.Xresources'
 
 # Opening config files
