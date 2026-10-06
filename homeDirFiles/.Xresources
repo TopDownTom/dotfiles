@@ -3,3 +3,6 @@
 
 ! Xresource theme
 #include ".Xres-theme"
+
+! sxiv background
+Sxiv.background: black
