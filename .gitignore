@@ -4,10 +4,6 @@ polyMediaOutput
 volLevel
 touchpad
 
-# Cmus
-cmus/.config/cmus/*
-!cmus/.config/cmus/autosave
-
 # Firefox
 !homeDirFiles/.mozilla
 homeDirFiles/.mozilla/*
