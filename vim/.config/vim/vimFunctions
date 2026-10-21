@@ -1,5 +1,23 @@
 " Below are a collection of vim functions I use.
 
+function! LogJobOutput(jobid, data, event) abort
+  for l:line in a:data
+    if !empty(l:line)
+      echomsg '[log-output] ' . l:line
+    endif
+  endfor
+endfunction
+
+function! StartLoggedJob(command, options) abort
+  let l:opts = copy(a:options)
+  let l:callbacks = {
+        \ 'on_stdout': function('LogJobOutput'),
+        \ 'on_stderr': function('LogJobOutput'),
+        \ }
+  call extend(l:opts, l:callbacks, 'force')
+  return jobstart(a:command, l:opts)
+endfunction
+
 " This adds a colored column where github would begin introducing a horizontal
 " slidebar
 function! ColorColumn()
@@ -8,13 +26,6 @@ function! ColorColumn()
 	else
 		:set colorcolumn=125
 	endif
-endfunction
-
-" Calls my script (makePDF) to compile and display the current LaTeX file. Subsequent
-" calls will simply update the pdf to the newest version. Depends: zathura.
-function! MakePdf()
-	:silent execute '!makePDF ' . expand("%")
-	:redraw!
 endfunction
 
 " Calls my script (runProg) to run the program in a new terminal window.
@@ -26,4 +37,17 @@ endfunction
 " Turns on spacing dots
 function! ShowSpace()
     :set invlist
+endfunction
+
+function! CompileTexRoot() abort
+  let l:file = expand('%:p')
+  let l:root = t:tex_root
+
+  let l:job = StartLoggedJob(
+        \ ['/usr/local/sbin/makePDF', l:root],
+        \ {'cwd': fnamemodify(l:root, ':h')})
+endfunction
+
+function! TexExit(jobid, code, event) abort
+  echomsg '[tex] compile process exited with code ' . a:code
 endfunction

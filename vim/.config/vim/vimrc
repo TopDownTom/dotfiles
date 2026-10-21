@@ -17,7 +17,7 @@ set nohlsearch
 
 " Custom functions. Comments in functions-file
 nnoremap \c :call ColorColumn()<cr>
-noremap \p :call MakePdf()<cr>
+noremap \p :call CompileTexRoot()<cr>
 noremap \r :call RunProg()<cr>
 noremap \. :call ShowSpace()<cr>
 vmap # :s/^/#/
@@ -55,3 +55,11 @@ set lcs+=tab:>-
 
 " Set colorscheme to use vim defaults
 colorscheme default
+
+" Set the xtitle to the currently open file
+set title
+set titlestring=%t
+
+if !empty($TEX_ROOT)
+  let t:tex_root = fnamemodify($TEX_ROOT, ':p')
+endif
