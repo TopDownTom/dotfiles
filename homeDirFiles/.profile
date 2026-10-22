@@ -17,21 +17,22 @@ export TEXMFHOME="$HOME/.config/texmf/"
 export SCRIPT_DIR="/usr/local/etc/scripts"
 export USER_CONFIG_DIR="/usr/local/etc/user_configs"
 export SSH_AUTH_SOCK=$HOME/.ssh/ssh_auth_sock
+export PROTON_LOG_DIR="/var/log/steam/"
 
 # Start X-Org on login
 if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
-	exec startx
+  exec startx
 fi
 
 # Use for selectable WM list
 #if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
-#	wms=(i3 openbox-session)
-#	select wm in ${wms[@]};
-#	do
-#		case $wm in
-#			*)
-#				exec startx $HOME/.xinitrc $wm
-#				break;;
-#		esac
-#	done
+#  wms=(i3 openbox-session)
+#  select wm in ${wms[@]};
+#  do
+#    case $wm in
+#      *)
+#        exec startx $HOME/.xinitrc $wm
+#        break;;
+#    esac
+#  done
 #fi
