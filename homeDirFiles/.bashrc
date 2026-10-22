@@ -43,3 +43,13 @@ shopt -s checkwinsize
 # see ~/.bash_functions for info on the called functions
 PS1='$(checkSSHSess)\033[1;34m\w\033[00m $(gitDirInfo) \e[0m\n\$ '
 #PS1='\033[01;34m\w\033[00m \e[1;32m \e[0m\n\$ ' # the default prompt
+
+# Use PROMPT_COMMAND to grab the pwd prior to the shell invocation
+PROMPT_COMMAND="setTitlePWD${PROMPT_COMMAND:+;$PROMPT_COMMAND}"
+
+# While a command runs, show the command line in the title.
+case "$TERM" in
+  rxvt*|xterm*)
+    trap 'printf "\e]0;%s\a" "${BASH_COMMAND:0:120}"' DEBUG
+    ;;
+esac

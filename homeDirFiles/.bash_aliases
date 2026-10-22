@@ -75,9 +75,3 @@ $a gs='cd $SCRIPT_DIR'
 $a gtor='cd $HOME/downloads/seeds'
 $a gv='cd $HOME/videos'
 $a gw='cd $HOME/pix/miscWG'
-
-# Functions
-# LaTeX function for assigning a 'root document'. See vimrc.
-texedit() {
-  TEX_ROOT="$1" vi "$2"
-}
