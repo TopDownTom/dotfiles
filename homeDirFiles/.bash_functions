@@ -15,5 +15,14 @@ function setTitlePWD() {
 
 # LaTeX function for assigning a 'root document'. See vimrc.
 function texedit() {
-  TEX_ROOT="$1" vi "$2"
+  local tex_root doc
+
+  case $# in
+    0) echo "Usage: texedit [tex_root [file]]" >&2; return 2 ;;
+    1) tex_root=$1; doc=$1 ;;
+    2) tex_root=$1; doc=$2 ;;
+    *) echo "Usage: texedit [tex_root [file]]" >&2; return 2 ;;
+  esac
+
+  TEX_ROOT="$tex_root" vi "$doc"
 }
